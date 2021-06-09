@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{DAB0DAF9-CC0D-750B-6568-1F9618423456}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/targetController.cs">
+    <Files>
+      <File FileName="Assets/charController.cs" Line="44" Column="20" />
+      <File FileName="Assets/targetController.cs" Line="7" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AWS_test_Project" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="targetController.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="aeed3576-50a8-44ba-9309-ba2449f099e1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
