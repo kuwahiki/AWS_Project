@@ -20,8 +20,11 @@ public class targetController : MonoBehaviour
     {
         this.transform.position = PlayerModel.transform.position;
 
-        float MouseX = Input.GetAxis("Mouse X");
-        Vector3 rotate = new Vector3(0, MouseX * 1.5f, 0);
-        this.transform.Rotate(rotate);
+        if (Input.GetMouseButton(0))
+        {
+            float MouseX = Input.GetAxis("Mouse X");
+            Vector3 rotate = new Vector3(0, MouseX * 1.5f, 0);
+            this.transform.Rotate(rotate);
+        }
     }
 }

@@ -18,47 +18,55 @@ public class charController : MonoBehaviour
 
         idel = animator.GetInteger("idel");
         walk = animator.GetInteger("walk");
+        PlayerPrefs.SetInt("State", 0);
     }
 
     // Update is called once per frame
     void Update()
     {
+        int Chat = PlayerPrefs.GetInt("State");
         int animationInt = idel;
         Vector3 foword = this.transform.position - MainCamera.position;
         foword.y = 0;
         foword = foword.normalized * 10;
-        if (Input.GetKey(KeyCode.W))
+        if (Chat == 0)
         {
-            rigidbody.AddForce(foword);
-            animationInt = walk;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            Vector3 left = new Vector3(-foword.z, 0, foword.x);
-            rigidbody.AddForce(left);
-            animationInt = walk;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            Vector3 right = new Vector3(foword.z, 0, -foword.x);
-            rigidbody.AddForce(right);
-            animationInt = walk;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            Vector3 back = -foword;
-            rigidbody.AddForce(back);
-            animationInt = walk;
+            if (Input.GetKey(KeyCode.W))
+            {
+                rigidbody.AddForce(foword);
+                animationInt = walk;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                Vector3 left = new Vector3(-foword.z, 0, foword.x);
+                rigidbody.AddForce(left);
+                animationInt = walk;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                Vector3 right = new Vector3(foword.z, 0, -foword.x);
+                rigidbody.AddForce(right);
+                animationInt = walk;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                Vector3 back = -foword;
+                rigidbody.AddForce(back);
+                animationInt = walk;
+            }
         }
         animator.SetInteger("animation",animationInt);
 
         if (animationInt == 1)
         {
-            Vector3 force = rigidbody.velocity * 10.0f;
+            Vector3 force = rigidbody.velocity * 100.0f;
             force += this.transform.position;
             force.y = 0;
 
-            this.transform.rotation = Quaternion.LookRotation(force);
+            if (force != this.transform.position)
+            {
+                this.transform.rotation = Quaternion.LookRotation(force);
+            }
         }
     }
 

@@ -1,16 +1,21 @@
 ﻿<Properties StartupConfiguration="{545C0A3C-7EDF-29E0-D43B-59D927CB6951}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/charController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/CameraController.cs">
     <Files>
-      <File FileName="Assets/CameraController.cs" Line="45" Column="62" />
-      <File FileName="Assets/targetController.cs" Line="24" Column="54" />
-      <File FileName="Assets/charController.cs" Line="1" Column="1" />
+      <File FileName="Assets/MyAssets/Scripts/PlayUIController.cs" Line="30" Column="56" />
+      <File FileName="Assets/MyAssets/Scripts/targetController.cs" Line="28" Column="10" />
+      <File FileName="Assets/MyAssets/Scripts/charController.cs" Line="27" Column="45" />
+      <File FileName="Assets/MyAssets/Scripts/CameraController.cs" Line="22" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AWS_Project" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="charController.cs" selected="True" />
+              <Node name="MyAssets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="CameraController.cs" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
@@ -19,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="86367fd0-4bcc-4258-b104-e72384ad4810" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="de50df74-edca-4ce5-aed4-b437e48e4e8d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -19,17 +19,20 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float MouseY = Input.GetAxis("Mouse Y");
-        MouseY *= Scense;
+        if (Input.GetMouseButton(0))
+        {
+            float MouseY = Input.GetAxis("Mouse Y");
+            MouseY *= Scense;
 
-        float y = camera.GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y;
-        y += MouseY;
-        y =  Mathf.Max(MinY,y);
-        y = Mathf.Min(MaxY,y);
+            float y = camera.GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y;
+            y += MouseY;
+            y = Mathf.Max(MinY, y);
+            y = Mathf.Min(MaxY, y);
 
-        Vector3 rotato = new Vector3(0,y,-3);
+            Vector3 rotato = new Vector3(0, y, -3);
 
-        camera.GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset = rotato;
+            camera.GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset = rotato;
+        }
 
 
         //float MouseX = Input.GetAxis("Mouse X");
