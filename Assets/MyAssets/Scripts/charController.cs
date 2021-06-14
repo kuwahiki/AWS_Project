@@ -8,17 +8,20 @@ public class charController : MonoBehaviour
     [SerializeField] private float MaxSpeed = 3.0f;
     private const int foword = 1, back = 2,right = 3,left = 4;
     private int idel, walk;
+    private string sex;
     private Animator animator;
     Rigidbody rigidbody;
     // Start is called before the first frame update
     void Start()
     {
+        MainCamera = GameObject.Find("Main Camera").transform;
         rigidbody = this.GetComponent<Rigidbody>();
         animator = this.GetComponent<Animator>();
 
         idel = animator.GetInteger("idel");
         walk = animator.GetInteger("walk");
         PlayerPrefs.SetInt("State", 0);
+        sex = PlayerPrefs.GetString("sex");
     }
 
     // Update is called once per frame
@@ -67,6 +70,23 @@ public class charController : MonoBehaviour
             {
                 this.transform.rotation = Quaternion.LookRotation(force);
             }
+        }
+
+        if(this.sex != PlayerPrefs.GetString("sex"))
+        {
+            Debug.Log(this.transform.root.name);
+            GameObject Model = GameObject.Find(this.transform.root.name + "/Model");
+            if(Model == null)
+            {
+                Debug.Log("null ," + PlayerPrefs.GetString("sex"));
+                Model = GameObject.Find(this.transform.root.name + this.sex + "(Clone)");
+            }
+            targetController target = GameObject.Find(this.transform.root.name + "/CameraTarget").GetComponent<targetController>();
+            GameObject NewModel = (GameObject)Resources.Load(PlayerPrefs.GetString("sex"));
+            Instantiate(NewModel,this.gameObject.transform.position, this.transform.rotation, this.transform.root.gameObject.transform);
+            target.PlayerModel = GameObject.Find(this.transform.root.name + PlayerPrefs.GetString("sex") + "(Clone)");
+            Destroy(Model);
+            this.sex = PlayerPrefs.GetString("sex");
         }
     }
 

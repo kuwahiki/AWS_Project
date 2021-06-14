@@ -7,14 +7,12 @@ using UnityEngine.EventSystems;
 public class PlayUIController : MonoBehaviour
 {
     [SerializeField] private Image[] Icons = new Image[2];
-    string IconName;
     private Button Send;
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < Icons.Length; i++)
         {
-            IconName = Icons[i].GetComponent<Transform>().name;
             EventTrigger trigger = Icons[i].GetComponent<EventTrigger>();
             EventTrigger.Entry entry = new EventTrigger.Entry();
 
@@ -32,7 +30,7 @@ public class PlayUIController : MonoBehaviour
 
             // EventTriggerに追加
             trigger.triggers.Add(entry);
-            Debug.Log(IconName);
+            //Debug.Log();
         }
     }
 

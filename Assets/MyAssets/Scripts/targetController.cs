@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class targetController : MonoBehaviour
 {
-    private GameObject PlayerModel;
+    [HideInInspector] public GameObject PlayerModel;
     private CameraController CameraController;
     // Start is called before the first frame update
     void Start()
@@ -12,6 +12,7 @@ public class targetController : MonoBehaviour
         string root = gameObject.transform.root.name;
         PlayerModel = GameObject.Find(root + "/Model");
         CameraController = GameObject.Find("CMvcam1").GetComponent<CameraController>();
+        PlayerPrefs.SetString("sex", "man");
 
     }
 
