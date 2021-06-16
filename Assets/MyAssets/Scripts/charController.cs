@@ -78,7 +78,7 @@ public class charController : MonoBehaviour
             GameObject Model = GameObject.Find(this.transform.root.name + "/Model");
             if(Model == null)
             {
-                Debug.Log("null ," + PlayerPrefs.GetString("sex"));
+                Debug.Log("null");
                 Model = GameObject.Find(this.transform.root.name + this.sex + "(Clone)");
             }
             targetController target = GameObject.Find(this.transform.root.name + "/CameraTarget").GetComponent<targetController>();

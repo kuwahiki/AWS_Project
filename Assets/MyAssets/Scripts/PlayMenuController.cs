@@ -115,6 +115,8 @@ public class PlayMenuController : MonoBehaviour
     {
         //クリックされた際の処理
         icons_parent.active = false;
+
+        //アバター編集用のUIを呼び出す
         GameObject obj = (GameObject)Resources.Load("Edit_Model");
         Instantiate(obj, new Vector3(1227, 541, 0), Quaternion.identity, menu_base.transform);
 
@@ -148,18 +150,82 @@ public class PlayMenuController : MonoBehaviour
     void Clicked_Tool(BaseEventData eventData)
     {
         //クリックされた際の処理
+        //ルーム編集用のUIを呼び出す
+        GameObject obj1 = (GameObject)Resources.Load("EditUI_Flore");
+        GameObject obj2 = (GameObject)Resources.Load("EditUI_Wall");
+        Instantiate(obj1, new Vector3(1227, 541, 0), Quaternion.identity, menu_base.transform);
+        Instantiate(obj2, new Vector3(1227, 541, 0), Quaternion.identity, menu_base.transform);
+        icons_parent.active = false;
+
+        Image[] images_Flore = new Image[obj1.transform.childCount - 1];
+        Image[] images_Wall = new Image[obj1.transform.childCount - 1];
+        for(int i = 0; i < images_Flore.Length; i++)
+        {
+            images_Flore[i] = GameObject.Find("EditUI_Flore(Clone)").transform.GetChild(i).GetComponent<Image>();
+            images_Wall[i] = GameObject.Find("EditUI_Wall(Clone)").transform.GetChild(i).GetComponent<Image>();
+
+            EventTrigger trigger1 = images_Flore[i].GetComponent<EventTrigger>();
+            EventTrigger trigger2 = images_Wall[i].GetComponent<EventTrigger>();
+            EventTrigger.Entry entry_Flore = new EventTrigger.Entry();
+            EventTrigger.Entry entry_Wall = new EventTrigger.Entry();
+            // なんのイベントを検出するか
+            entry_Flore.eventID = EventTriggerType.PointerClick;
+            // コールバック登録
+            switch (i)
+            {
+                case 0:
+                    entry_Flore.callback.AddListener((BaseEventData eventData) => {
+                        Edit_texture("FloreMaterial", "Flore1");
+                    });
+                    entry_Wall.callback.AddListener((BaseEventData eventData) => {
+                        Edit_texture("WallMaterial", "Wall1");
+                    });
+                    break;
+                case 1:
+                    entry_Flore.callback.AddListener((BaseEventData eventData) => {
+                        Edit_texture("FloreMaterial", "Flore2");
+                    });
+                    entry_Wall.callback.AddListener((BaseEventData eventData) => {
+                        Edit_texture("WallMaterial", "Wall2");
+                    });
+                    break;
+                case 2:
+                    entry_Flore.callback.AddListener((BaseEventData eventData) => {
+                        Edit_texture("FloreMaterial", "Flore3");
+                    });
+                    entry_Wall.callback.AddListener((BaseEventData eventData) => {
+                        Edit_texture("WallMaterial", "Wall3");
+                    });
+                    break;
+                default:
+                    break;
+            }
+            // EventTriggerに追加
+            trigger1.triggers.Add(entry_Flore);
+            trigger2.triggers.Add(entry_Wall);
+        }
     }
 
     void Clicked_chat(BaseEventData eventData)
     {
         //クリックされた際の処理
+        icons_parent.active = false;
+        private_Chat();
+        GameObject obj = (GameObject)Resources.Load("Private_chat");
+        Instantiate(obj, new Vector3(1227, 541, 0), Quaternion.identity, menu_base.transform);
+
+        Button button = GameObject.Find("Sent").GetComponent<Button>();
+        button.onClick.AddListener(() => {
+            Destroy(GameObject.Find("Private_chat(Clone)"));
+            icons_parent.active = true;
+        });
     }
 
     void Clicked_Man(BaseEventData eventData)
     {
         //クリックされた際の処理
         PlayerPrefs.SetString("sex","man");
-        GameObject obj = GameObject.Find("Edit_Model(Clone)");
+        //GameObject obj = GameObject.Find("Edit_Model(Clone)");
         Destroy(this.gameObject);
         icons_parent.active = true;
     }
@@ -168,12 +234,26 @@ public class PlayMenuController : MonoBehaviour
     {
         //クリックされた際の処理
         PlayerPrefs.SetString("sex", "woman");
-        GameObject obj = GameObject.Find("Edit_Model(Clone)");
+        //GameObject obj = GameObject.Find("Edit_Model(Clone)");
         Destroy(this.gameObject);
         icons_parent.active = true;
+    }
+
+    void Edit_texture(string Name_Material, string Name_texture)
+    {
+        Material material = (Material)Resources.Load(Name_Material);
+        Texture texture;
+        texture = (Texture)Resources.Load(Name_texture);
+        material.mainTexture = texture;
+        this.GetComponent<CanvasGroup>().DOFade(0, 0.6f).SetEase(Ease.InOutExpo);
     }
     void Logout()
     {
         //ログアウトの処理（AWS側）
+    }
+
+    void private_Chat()
+    {
+        //個人チャット内容（AWS側）
     }
 }
