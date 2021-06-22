@@ -39,7 +39,7 @@ public class PlayUIController : MonoBehaviour
 
             GameObject obj = (GameObject)Resources.Load("InputChat");
             Transform Canvas = GameObject.Find("Canvas").transform;
-            Instantiate(obj, new Vector3(1227, 541, 0), Quaternion.identity, Canvas);
+            Instantiate(obj,this.transform.position, Quaternion.identity, Canvas);
 
             PlayerPrefs.SetInt("State", 1);
             obj = GameObject.Find("InputChat(Clone)/Send");
@@ -52,7 +52,7 @@ public class PlayUIController : MonoBehaviour
     {
         GameObject obj = (GameObject)Resources.Load("PlayMenu");
         Transform Canvas = GameObject.Find("Canvas").transform;
-        Instantiate(obj, new Vector3(1227, 541, 0), Quaternion.identity, Canvas);
+        Instantiate(obj,this.transform.position, Quaternion.identity, Canvas);
         PlayerPrefs.SetInt("State", 1);
     }
 

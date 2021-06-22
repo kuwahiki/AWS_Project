@@ -87,7 +87,7 @@ public class PlayMenuController : MonoBehaviour
         //クリックされた際の処理
         icons_parent.active = false;
         GameObject obj = (GameObject)Resources.Load("Logout");
-        Instantiate(obj, new Vector3(1227, 541, 0), Quaternion.identity, menu_base.transform);
+        Instantiate(obj, menu_base.transform.position, Quaternion.identity, menu_base.transform);
 
         //ログアウトする場合
         Button yes = GameObject.Find("Yes").GetComponent<Button>();
@@ -108,7 +108,7 @@ public class PlayMenuController : MonoBehaviour
         //クリックされた際の処理
         GameObject obj = (GameObject)Resources.Load("Help");
         Transform Canvas = GameObject.Find("Canvas").transform;
-        Instantiate(obj, new Vector3(1227, 541, 0), Quaternion.identity, Canvas);
+        Instantiate(obj, menu_base.transform.position, Quaternion.identity, Canvas);
     }
 
     void Clicked_info(BaseEventData eventData)
@@ -118,7 +118,7 @@ public class PlayMenuController : MonoBehaviour
 
         //アバター編集用のUIを呼び出す
         GameObject obj = (GameObject)Resources.Load("Edit_Model");
-        Instantiate(obj, new Vector3(1227, 541, 0), Quaternion.identity, menu_base.transform);
+        Instantiate(obj, menu_base.transform.position, Quaternion.identity, menu_base.transform);
 
         Image[] images = new Image[2];
         images[0] = GameObject.Find("Edit_Model(Clone)/Man").GetComponent<Image>();
@@ -153,8 +153,8 @@ public class PlayMenuController : MonoBehaviour
         //ルーム編集用のUIを呼び出す
         GameObject obj1 = (GameObject)Resources.Load("EditUI_Flore");
         GameObject obj2 = (GameObject)Resources.Load("EditUI_Wall");
-        Instantiate(obj1, new Vector3(1227, 541, 0), Quaternion.identity, menu_base.transform);
-        Instantiate(obj2, new Vector3(1227, 541, 0), Quaternion.identity, menu_base.transform);
+        Instantiate(obj1, menu_base.transform.position, Quaternion.identity, menu_base.transform);
+        Instantiate(obj2, menu_base.transform.position, Quaternion.identity, menu_base.transform);
         icons_parent.active = false;
 
         Image[] images_Flore = new Image[obj1.transform.childCount - 1];
@@ -212,7 +212,7 @@ public class PlayMenuController : MonoBehaviour
         icons_parent.active = false;
         private_Chat();
         GameObject obj = (GameObject)Resources.Load("Private_chat");
-        Instantiate(obj, new Vector3(1227, 541, 0), Quaternion.identity, menu_base.transform);
+        Instantiate(obj, menu_base.transform.position, Quaternion.identity, menu_base.transform);
 
         Button button = GameObject.Find("Sent").GetComponent<Button>();
         button.onClick.AddListener(() => {

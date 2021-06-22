@@ -75,6 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34cdbc473ecf4092892e0ccca9b4378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerModel: {fileID: 0}
 --- !u!1001 &7693519066950994354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,10 +138,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 160006807062966037, guid: 237476d27e5264335a51cf8f2a1ca6b2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 160006807063261863, guid: 237476d27e5264335a51cf8f2a1ca6b2,
         type: 3}
       propertyPath: m_Name
       value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 160006807529115546, guid: 237476d27e5264335a51cf8f2a1ca6b2,
+        type: 3}
+      propertyPath: m_Drag
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 237476d27e5264335a51cf8f2a1ca6b2, type: 3}

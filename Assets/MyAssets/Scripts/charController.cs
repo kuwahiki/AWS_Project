@@ -25,7 +25,7 @@ public class charController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
         int Chat = PlayerPrefs.GetInt("State");
         int animationInt = idel;
