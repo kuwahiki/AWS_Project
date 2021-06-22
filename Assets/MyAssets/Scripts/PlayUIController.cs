@@ -36,16 +36,25 @@ public class PlayUIController : MonoBehaviour
 
     void Clicked_Chat(BaseEventData eventData)
     {
-
+            //チャット入力用のUIの生成
             GameObject obj = (GameObject)Resources.Load("InputChat");
             Transform Canvas = GameObject.Find("Canvas").transform;
             Instantiate(obj,this.transform.position, Quaternion.identity, Canvas);
 
+            //プレイヤーが動けないようにする
             PlayerPrefs.SetInt("State", 1);
             obj = GameObject.Find("InputChat(Clone)/Send");
-            Send = obj.GetComponent<Button>();
 
-            Send.onClick.AddListener(() => { SendChat(); });
+            //チャット内容をDynamoDBに送信する処理（Unity側の処理）
+            Send = obj.GetComponent<Button>();
+            Send.onClick.AddListener(() => {
+                SendChat();
+                GameObject parent = GameObject.Find("InputChat(Clone)");
+                Destroy(parent);
+
+                //プレイヤーが動けるようにする
+                PlayerPrefs.SetInt("State", 0);
+            });
     }
 
     void Clicked_Menu(BaseEventData eventData)
@@ -58,8 +67,7 @@ public class PlayUIController : MonoBehaviour
 
     void SendChat()
     {
-        GameObject parent = GameObject.Find("InputChat(Clone)");
-        Destroy(parent);
-        PlayerPrefs.SetInt("State", 0);
+        //チャット内容をDynamoDBに送信する処理（AWS側の処理）
+
     }
 }

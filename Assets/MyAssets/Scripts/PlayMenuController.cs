@@ -78,13 +78,13 @@ public class PlayMenuController : MonoBehaviour
 
     void Clicked_back(BaseEventData eventData)
     {
-        //クリックされた際の処理
+        //ゲームに戻るをクリックされた際の処理
         this.GetComponent<CanvasGroup>().DOFade(0, 0.6f).SetEase(Ease.InOutExpo);
     }
 
     void Clicked_delete(BaseEventData eventData)
     {
-        //クリックされた際の処理
+        //ゲームを終了をクリックされた際の処理
         icons_parent.active = false;
         GameObject obj = (GameObject)Resources.Load("Logout");
         Instantiate(obj, menu_base.transform.position, Quaternion.identity, menu_base.transform);
@@ -105,7 +105,7 @@ public class PlayMenuController : MonoBehaviour
 
     void Clicked_help(BaseEventData eventData)
     {
-        //クリックされた際の処理
+        //操作方法クリックされた際の処理
         GameObject obj = (GameObject)Resources.Load("Help");
         Transform Canvas = GameObject.Find("Canvas").transform;
         Instantiate(obj, menu_base.transform.position, Quaternion.identity, Canvas);
@@ -113,7 +113,7 @@ public class PlayMenuController : MonoBehaviour
 
     void Clicked_info(BaseEventData eventData)
     {
-        //クリックされた際の処理
+        //アバター編集をクリックされた際の処理
         icons_parent.active = false;
 
         //アバター編集用のUIを呼び出す
@@ -149,7 +149,7 @@ public class PlayMenuController : MonoBehaviour
 
     void Clicked_Tool(BaseEventData eventData)
     {
-        //クリックされた際の処理
+        //ルーム編集をクリックされた際の処理
         //ルーム編集用のUIを呼び出す
         GameObject obj1 = (GameObject)Resources.Load("EditUI_Flore");
         GameObject obj2 = (GameObject)Resources.Load("EditUI_Wall");

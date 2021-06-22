@@ -36,23 +36,27 @@ public class charController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
+                //カメラから前方に動く
                 rigidbody.AddForce(foword);
                 animationInt = walk;
             }
             if (Input.GetKey(KeyCode.A))
             {
+                //カメラから左に動く
                 Vector3 left = new Vector3(-foword.z, 0, foword.x);
                 rigidbody.AddForce(left);
                 animationInt = walk;
             }
             if (Input.GetKey(KeyCode.D))
             {
+                //カメラから右に動く
                 Vector3 right = new Vector3(foword.z, 0, -foword.x);
                 rigidbody.AddForce(right);
                 animationInt = walk;
             }
             if (Input.GetKey(KeyCode.S))
             {
+                //カメラの方向に歩く
                 Vector3 back = -foword;
                 rigidbody.AddForce(back);
                 animationInt = walk;
@@ -62,6 +66,7 @@ public class charController : MonoBehaviour
 
         if (animationInt == 1)
         {
+            //プレイヤーが移動方向に向く
             Vector3 force = rigidbody.velocity * 100.0f;
             force += this.transform.position;
             force.y = 0;
@@ -74,6 +79,7 @@ public class charController : MonoBehaviour
 
         if(this.sex != PlayerPrefs.GetString("sex"))
         {
+            //プレイヤーのモデルを置き換える
             Debug.Log(this.transform.root.name);
             GameObject Model = GameObject.Find(this.transform.root.name + "/Model");
             if(Model == null)
