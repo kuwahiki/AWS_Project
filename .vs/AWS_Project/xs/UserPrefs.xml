@@ -1,17 +1,24 @@
 ﻿<Properties StartupConfiguration="{545C0A3C-7EDF-29E0-D43B-59D927CB6951}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EmptyTextFile.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/AWSCognitoIDs.cs">
     <Files>
+      <File FileName="Assets/MyAssets/Scripts/TitleUIController.cs" Line="143" Column="33" />
       <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" Line="7" Column="19" />
-      <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" Line="118" Column="27" />
-      <File FileName="Assets/MyAssets/Scripts/LogoutUIController.cs" Line="14" Column="32" />
-      <File FileName="Assets/MyAssets/Scripts/PlayMenuController.cs" Line="252" Column="24" />
-      <File FileName="Assets/MyAssets/Scripts/TitleUIController.cs" Line="71" Column="1" />
-      <File FileName="EmptyTextFile.txt" Line="11" Column="2" />
+      <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" />
+      <File FileName="Assets/MyAssets/Scripts/LogoutUIController.cs" />
+      <File FileName="Assets/MyAssets/Scripts/PlayMenuController.cs" />
+      <File FileName="Assets/MyAssets/Scripts/AWSCognitoIDs.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AWS_Project" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="54cf42a5-6eda-499a-87dc-7e3d9975ff4a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="40ed1ecf-b764-41ee-be98-eeb106f93665" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

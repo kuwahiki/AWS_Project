@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Amazon;
+using Amazon.CognitoIdentity;
 using Amazon.CognitoIdentityProvider;
 using Amazon.CognitoIdentityProvider.Model;
 using Amazon.Extensions.CognitoAuthentication;
@@ -13,7 +14,9 @@ public class TitleUIController : MonoBehaviour
 {
     GameObject Canvas;
     private bool a = true;
-    public InputField emailField;
+    private InputField emailField;
+    private InputField passwordField;
+    private Text resultText;
     public InputField confirmationCodeField;
     static string appClientId = AWSCognitoIDs.AppClientId;
     static string userPoolId = AWSCognitoIDs.UserPoolId;
@@ -71,16 +74,32 @@ public class TitleUIController : MonoBehaviour
         }
     }
 
-    void SignIn()
-    {
+
+
+    void SignIn() {
         //AWSCognitoのユーザー認証（AWS側の処理）
-        //SignInの処理              
-         AuthenticateWithSrpAsync();        
+        //SignInの処理
+        emailField = GameObject.Find("Email_Input").GetComponent<InputField>();
+        passwordField = GameObject.Find("Pass_Input").GetComponent<InputField>();
+        try
+        {
+            AuthenticateWithSrpAsync();
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError(ex);
+        }
     }
+
+    CognitoAWSCredentials credentials = new CognitoAWSCredentials(
+        "us-east-1:15fce7cd-2499-4100-8bae-4c31a9cf03b8", // ID プールの ID
+        RegionEndpoint.USEast1 // リージョン
+        );
 
     public async void AuthenticateWithSrpAsync()
     {
-        var provider = new AmazonCognitoIdentityProviderClient(null, RegionEndpoint.APNortheast1);
+
+        var provider = new AmazonCognitoIdentityProviderClient(credentials, RegionEndpoint.APNortheast1);
         CognitoUserPool userPool = new CognitoUserPool(
             userPoolId,
             appClientId,
@@ -106,7 +125,34 @@ public class TitleUIController : MonoBehaviour
     {
         //AWSCognitoのユーザー認証（AWS側の処理）
         //SignUpの処理
+        emailField = GameObject.Find("Email_Input").GetComponent<InputField>();
+        passwordField = GameObject.Find("Pass_Input").GetComponent<InputField>();
 
+
+        var client = new AmazonCognitoIdentityProviderClient(credentials, Amazon.RegionEndpoint.APNortheast1);
+        var sr = new SignUpRequest();
+        string email = emailField.text;
+        string password = passwordField.text;
+
+        sr.ClientId = appClientId;
+        sr.Username = email;
+        sr.Password = password;
+        sr.UserAttributes = new List<AttributeType> {
+            new AttributeType {
+                Name = "email",
+                Value = email
+            }
+        };
+
+        try
+        {
+            //SignUpResponse result = client.SignUpAsync(sr);
+            //Debug.Log(result);
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError(ex);
+        }
     }
 
     void Submit()
