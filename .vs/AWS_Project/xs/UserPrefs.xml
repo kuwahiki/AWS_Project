@@ -1,34 +1,17 @@
 ﻿<Properties StartupConfiguration="{545C0A3C-7EDF-29E0-D43B-59D927CB6951}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/MainMenuUIController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmptyTextFile.txt">
     <Files>
-      <File FileName="Assets/MyAssets/Scripts/MainMenyUIController.cs" Line="30" Column="25" />
-      <File FileName="Assets/MyAssets/Scripts/PlayMenuController.cs" Line="146" Column="41" />
-      <File FileName="Assets/MyAssets/Scripts/PlayUIController.cs" Line="1" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/targetController.cs" Line="1" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/charController.cs" Line="1" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/HelpUIController.cs" Line="1" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/TitleUIController.cs" Line="83" Column="1" />
+      <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" Line="7" Column="19" />
+      <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" Line="118" Column="27" />
+      <File FileName="Assets/MyAssets/Scripts/LogoutUIController.cs" Line="14" Column="32" />
+      <File FileName="Assets/MyAssets/Scripts/PlayMenuController.cs" Line="252" Column="24" />
+      <File FileName="Assets/MyAssets/Scripts/TitleUIController.cs" Line="71" Column="1" />
+      <File FileName="EmptyTextFile.txt" Line="11" Column="2" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="AWS_Project" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="MyAssets" expanded="True">
-                <Node name="Scripts" expanded="True">
-                  <Node name="MainMenuUIController.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="385f702e-e486-4e2e-a752-fc9a2c67cf9d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="54cf42a5-6eda-499a-87dc-7e3d9975ff4a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

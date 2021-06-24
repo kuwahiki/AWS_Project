@@ -91,7 +91,7 @@ public class PlayMenuController : MonoBehaviour
 
         //ログアウトする場合
         Button yes = GameObject.Find("Yes").GetComponent<Button>();
-        yes.onClick.AddListener(() => { Logout(); });
+        yes.onClick.AddListener(() => { ExitRoom(); });
 
         //ログアウトしない場合
         Button No = GameObject.Find("No").GetComponent<Button>();
@@ -247,9 +247,13 @@ public class PlayMenuController : MonoBehaviour
         material.mainTexture = texture;
         this.GetComponent<CanvasGroup>().DOFade(0, 0.6f).SetEase(Ease.InOutExpo);
     }
-    void Logout()
+    void ExitRoom()
     {
-        //ログアウトの処理（AWS側）
+        GameObject obj;
+        obj = (GameObject)Resources.Load("LogoutUI");
+        Transform Canvas = GameObject.Find("Canvas").transform;
+        Instantiate(obj, Canvas.position, Quaternion.identity, Canvas);
+        //ルームからの退出（AWS側）
     }
 
     void private_Chat()

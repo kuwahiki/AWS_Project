@@ -3,11 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Amazon;
+using Amazon.CognitoIdentityProvider;
+using Amazon.CognitoIdentityProvider.Model;
+using Amazon.Extensions.CognitoAuthentication;
+using System;
 
 public class TitleUIController : MonoBehaviour
 {
     GameObject Canvas;
     private bool a = true;
+    public InputField emailField;
+    public InputField confirmationCodeField;
+    static string appClientId = AWSCognitoIDs.AppClientId;
+    static string userPoolId = AWSCognitoIDs.UserPoolId;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +63,7 @@ public class TitleUIController : MonoBehaviour
                     GameObject.Find("Submit").GetComponent<Button>().onClick.AddListener(() => {
                         //認証コードの送信
                         Submit();
-                        SceneManager.LoadScene("");
+                    
                     });
                 });
             });
@@ -65,13 +74,39 @@ public class TitleUIController : MonoBehaviour
     void SignIn()
     {
         //AWSCognitoのユーザー認証（AWS側の処理）
-        //SignInの処理
+        //SignInの処理              
+         AuthenticateWithSrpAsync();        
     }
-    
+
+    public async void AuthenticateWithSrpAsync()
+    {
+        var provider = new AmazonCognitoIdentityProviderClient(null, RegionEndpoint.APNortheast1);
+        CognitoUserPool userPool = new CognitoUserPool(
+            userPoolId,
+            appClientId,
+            provider
+        );
+        CognitoUser user = new CognitoUser(
+            emailField.text,
+            appClientId,
+            userPool,
+            provider
+        );
+
+        AuthFlowResponse context = await user.StartWithSrpAuthAsync(new InitiateSrpAuthRequest()
+        {
+            Password = passwordField.text
+        }).ConfigureAwait(true);
+
+        // for debug
+        resultText.text = user.SessionTokens.IdToken;
+    }
+
     void SignUp()
     {
         //AWSCognitoのユーザー認証（AWS側の処理）
         //SignUpの処理
+
     }
 
     void Submit()
