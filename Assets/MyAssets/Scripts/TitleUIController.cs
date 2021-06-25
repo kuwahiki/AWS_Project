@@ -12,7 +12,7 @@ using System;
 
 public class TitleUIController : MonoBehaviour
 {
-    GameObject Canvas;
+    GameObject Canvas,Second;
     private bool a = true;
     private InputField emailField;
     private InputField passwordField;
@@ -46,11 +46,12 @@ public class TitleUIController : MonoBehaviour
             button = GameObject.Find("LoginUI(Clone)/SignUp").GetComponent<Button>();
             button.onClick.AddListener(() =>
             {
+
                 //SignUp用のUIを作成
                 obj = (GameObject)Resources.Load("SignUpUI");
                 Instantiate(obj, Canvas.transform.position, Quaternion.identity, Canvas.transform);
 
-                GameObject Second = GameObject.Find("SignUpUI(Clone)/Second");
+                Second = GameObject.Find("SignUpUI(Clone)/Second");
                 Second.active = false;
                 Destroy(GameObject.Find("LoginUI(Clone)"));
 
@@ -59,15 +60,6 @@ public class TitleUIController : MonoBehaviour
                 SignUp_btn.onClick.AddListener(() =>
                 {
                     SignUp();
-                    //認証コードを入力するUIへの入れ替え
-                    GameObject.Find("SignUpUI(Clone)/Frist").active = false;
-                    Second.active = true;
-
-                    GameObject.Find("Submit").GetComponent<Button>().onClick.AddListener(() => {
-                        //認証コードの送信
-                        Submit();
-                    
-                    });
                 });
             });
             a = false;
@@ -99,7 +91,7 @@ public class TitleUIController : MonoBehaviour
     public async void AuthenticateWithSrpAsync()
     {
 
-        var provider = new AmazonCognitoIdentityProviderClient(credentials, RegionEndpoint.APNortheast1);
+        var provider = new AmazonCognitoIdentityProviderClient(credentials, RegionEndpoint.USEast1);
         CognitoUserPool userPool = new CognitoUserPool(
             userPoolId,
             appClientId,
@@ -118,7 +110,8 @@ public class TitleUIController : MonoBehaviour
         }).ConfigureAwait(true);
 
         // for debug
-        resultText.text = user.SessionTokens.IdToken;
+        Debug.Log("success");
+        SceneManager.LoadScene("PlayScene");
     }
 
     void SignUp()
@@ -129,7 +122,7 @@ public class TitleUIController : MonoBehaviour
         passwordField = GameObject.Find("Pass_Input").GetComponent<InputField>();
 
 
-        var client = new AmazonCognitoIdentityProviderClient(credentials, Amazon.RegionEndpoint.APNortheast1);
+        var client = new AmazonCognitoIdentityProviderClient(null, Amazon.RegionEndpoint.USEast1);
         var sr = new SignUpRequest();
         string email = emailField.text;
         string password = passwordField.text;
@@ -146,8 +139,17 @@ public class TitleUIController : MonoBehaviour
 
         try
         {
-            //SignUpResponse result = client.SignUpAsync(sr);
-            //Debug.Log(result);
+            SignUpResponse result = client.SignUp(sr);
+            Debug.Log(result);
+            //認証コードを入力するUIへの入れ替え
+            GameObject.Find("SignUpUI(Clone)/Frist").active = false;
+            Second.active = true;
+
+            GameObject.Find("Submit").GetComponent<Button>().onClick.AddListener(() => {
+                //認証コードの送信
+                Submit();
+
+            });
         }
         catch (Exception ex)
         {
@@ -159,5 +161,23 @@ public class TitleUIController : MonoBehaviour
     {
         //AWSCognitoのユーザー認証（AWS側の処理）
         //ConfirmationCodeの送信
+
+        confirmationCodeField = GameObject.Find("ConfirmationCode_Input").GetComponent<InputField>();
+        var client = new AmazonCognitoIdentityProviderClient(credentials, Amazon.RegionEndpoint.USEast1);
+        ConfirmSignUpRequest confirmSignUpRequest = new ConfirmSignUpRequest();
+
+        confirmSignUpRequest.Username = emailField.text;
+        confirmSignUpRequest.ConfirmationCode = confirmationCodeField.text;
+        confirmSignUpRequest.ClientId = appClientId;
+
+        try
+        {
+            ConfirmSignUpResponse confirmSignUpResult = client.ConfirmSignUp(confirmSignUpRequest);
+            Debug.Log(confirmSignUpResult.ToString());
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError(ex);
+        }
     }
 }

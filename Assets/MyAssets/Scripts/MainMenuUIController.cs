@@ -10,7 +10,6 @@ public class MainMenuUIController : MonoBehaviour
 {
     GameObject[] menu_elem;
     GameObject Canvas;
-    PlayMenuController playMenuController;
     // Start is called before the first frame update
     void Start()
     {

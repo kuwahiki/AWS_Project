@@ -12,24 +12,38 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56645
+59878
 Successfully changed project path to: /Users/a50621/workspace/AWS_Project
 /Users/a50621/workspace/AWS_Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 1419.76 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 561.85 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/a50621/workspace/AWS_Project/Assets
 GfxDevice: creating device client; threaded=0
-2021-06-24 12:34:26.344 Unity[17352:264729] iMac preferred device: AMD Radeon Pro 555X (high power)
-2021-06-24 12:34:26.344 Unity[17352:264729] Metal devices available: 1
-2021-06-24 12:34:26.344 Unity[17352:264729] 0: AMD Radeon Pro 555X (high power)
-2021-06-24 12:34:26.344 Unity[17352:264729] Using device AMD Radeon Pro 555X (high power)
+2021-06-25 13:22:47.316 Unity[19575:395406] iMac preferred device: AMD Radeon Pro 555X (high power)
+2021-06-25 13:22:47.316 Unity[19575:395406] Metal devices available: 1
+2021-06-25 13:22:47.316 Unity[19575:395406] 0: AMD Radeon Pro 555X (high power)
+2021-06-25 13:22:47.316 Unity[19575:395406] Using device AMD Radeon Pro 555X (high power)
 Initializing Metal device caps: AMD Radeon Pro 555X
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56575
 Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.034609 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 32.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 12.616 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 1.969166 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7ffe5b18e000 doesn't match image /Users/a50621/workspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
