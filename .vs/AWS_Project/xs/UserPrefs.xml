@@ -1,28 +1,26 @@
 ﻿<Properties StartupConfiguration="{545C0A3C-7EDF-29E0-D43B-59D927CB6951}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/Signin.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/DynamoTest.cs">
     <Files>
+      <File FileName="Assets/MyAssets/Scripts/charController.cs" Line="2" Column="34" />
       <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" Line="12" Column="23" />
       <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" Line="118" Column="27" />
-      <File FileName="Assets/MyAssets/Scripts/PlayMenuController.cs" Line="252" Column="24" />
-      <File FileName="Assets/MyAssets/Scripts/TitleUIController.cs" Line="7" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/AWSCognitoIDs.cs" Line="5" Column="89" />
-      <File FileName="Assets/MyAssets/Scripts/Signin.cs" Line="17" Column="1" />
+      <File FileName="Assets/MyAssets/Scripts/PlayMenuController.cs" Line="200" Column="25" />
+      <File FileName="Assets/MyAssets/Scripts/TitleUIController.cs" />
+      <File FileName="Assets/MyAssets/Scripts/AWSCognitoIDs.cs" Line="10" Column="33" />
+      <File FileName="Assets/MyAssets/Scripts/Signin.cs" Line="14" Column="46" />
       <File FileName="Assets/MyAssets/Scripts/SignUp.cs" Line="19" Column="97" />
-      <File FileName="Assets/MyAssets/Scripts/Confirmation.cs" Line="15" Column="102" />
+      <File FileName="Assets/MyAssets/Scripts/Confirmation.cs" Line="15" Column="67" />
+      <File FileName="Assets/MyAssets/Scripts/PlayUIController.cs" Line="141" Column="48" />
+      <File FileName="Assets/MyAssets/Scripts/DynamoTest.cs" Line="52" Column="6" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="AWS_Project" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="53ded618-7de3-4555-a45f-1c47d2a7743a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="394672d2-207f-4489-82be-e7c69bc2c93f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/a50621/workspace/AWS_Project/Assets/MyAssets/Scripts/DynamoTest.cs" relfile="Assets/MyAssets/Scripts/DynamoTest.cs" line="53" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

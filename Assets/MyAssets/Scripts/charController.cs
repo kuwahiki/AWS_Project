@@ -6,6 +6,7 @@ public class charController : MonoBehaviour
 {
     [SerializeField] private Transform MainCamera;
     [SerializeField] private float MaxSpeed = 3.0f;
+
     private const int foword = 1, back = 2,right = 3,left = 4;
     private int idel, walk;
     private string sex;
