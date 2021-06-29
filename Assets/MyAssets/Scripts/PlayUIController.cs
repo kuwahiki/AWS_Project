@@ -1,19 +1,23 @@
 using System.Collections;
+using System.IO;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Amazon;
+using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.Model;
 using Amazon.DynamoDBv2.DataModel;
 using Amazon.CognitoIdentity;
-using Amazon.DynamoDBv2;
+using System.Threading.Tasks;
 
 public class PlayUIController : MonoBehaviour
 {
     [SerializeField] private Image[] Icons = new Image[2];
     private Button Send;
     AmazonDynamoDBClient Client;
+    CognitoAWSCredentials Credentials;
     int Bookid = 1001;
     DynamoDBContext Context;
     // Start is called before the first frame update
@@ -46,13 +50,16 @@ public class PlayUIController : MonoBehaviour
             string IdentityPoolId = AWSCognitoIDs.IdentityPoolId;
             string UserPoolID = AWSCognitoIDs.UserPoolId;
             var _CognitoPoolRegion = RegionEndpoint.GetBySystemName(AWSCognitoIDs.CognitoPoolRegion);
-            var Credentials = new CognitoAWSCredentials(IdentityPoolId, _CognitoPoolRegion); // ID プールの ID を文字列で指定
+            Credentials = new CognitoAWSCredentials(IdentityPoolId, _CognitoPoolRegion); // ID プールの ID を文字列で指定
             var _DynamoRegion = RegionEndpoint.GetBySystemName(AWSCognitoIDs.DynamoRegion);
             Credentials.AddLogin("cognito-idp." + region +".amazonaws.com/" + UserPoolID, AWSCognitoIDs.IDToken);
-            Client = new AmazonDynamoDBClient(Credentials, _DynamoRegion); // ユーザープール使っていない、つまり未認証の権限ロールを使用することになります。
+            Client = new AmazonDynamoDBClient(Credentials,RegionEndpoint.USEast1); // ユーザープール使っていない、つまり未認証の権限ロールを使用することになります。
             Context = new DynamoDBContext(Client); // アイテム操作は Context というものを介して操作する模様
         }
+
+
     }
+
 
     void Clicked_Chat(BaseEventData eventData)
     {
@@ -88,6 +95,8 @@ public class PlayUIController : MonoBehaviour
     void SendChat(string chat)
     {
         //チャット内容をDynamoDBに送信する処理（AWS側の処理）
+        //PutItem(Client, chat);
+        Write(Context, chat);
 
     }
 
@@ -138,24 +147,39 @@ public class PlayUIController : MonoBehaviour
         var result = client.CreateTableAsync(request).Result;
     }
 
-    private void PutItem(IAmazonDynamoDB client, string tableName)
+    private void PutItem(IAmazonDynamoDB client, string chatText)
     {
         //リクエストの構築
-        var request = new PutItemRequest
+        PutItemRequest request = new PutItemRequest
         {
-            TableName = tableName,//追加先のテーブル名
-                                  //各カラムの値を指定
+            TableName = "UnityTest",//追加先のテーブル名
+                                    //各カラムの値を指定
             Item = new Dictionary<string, AttributeValue>
                 {
-                    {"ThisIsId",new AttributeValue{N= "2"} },
-                    {"ThisIsSomething",new AttributeValue{N="5"} }
+                    {"ThisIsId",new AttributeValue{S = chatText} },
                 }
         };
-
         //テーブルに追加
         var result = client.PutItemAsync(request).Result;
+        
+
+    }
+    private void Write(DynamoDBContext context, string chatText)
+    {
+        //var bookBatch = context.CreateBatchWrite<Book>();
+
+        //Book book1 = new Book
+        //{
+        //    Test = chatText
+        //};
+
+        //bookBatch.AddPutItem(book1);
+
+
     }
 }
+
+
 
 
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -18,6 +19,8 @@ public class DynamoTest : MonoBehaviour
     void Start()
     {
         //AWSの設定
+        //UnityInitializer.AttachToGameObject(this.gameObject);
+        //AWSConfigs.HttpClient = AWSConfigs.HttpClientOption.UnityWebRequest; // ←この行で UnityWebRequest 使うように指定
         string region = AWSCognitoIDs.region;
         string IdentityPoolId = AWSCognitoIDs.IdentityPoolId;
         string UserPoolID = AWSCognitoIDs.UserPoolId;
@@ -32,8 +35,7 @@ public class DynamoTest : MonoBehaviour
     private void PerformUpdateOperation()
     {
         // Retrieve the book. 
-        Book bookRetrieved = null;
-        Context.LoadAsync<Book>(Bookid);
+        //Book bookRetrieved = null;
         //Context.LoadAsync<Book>(Bookid, (result) => // Update なので、値が取れることは期待
         //{
         //    if (result.Exception == null)
@@ -52,15 +54,3 @@ public class DynamoTest : MonoBehaviour
     }
 }
 
-[DynamoDBTable("ProductCatalog")] // データ構造はこれらの属性が必要
-public class Book
-{
-    [DynamoDBHashKey]   // Hash key.
-    public int Id { get; set; }
-    [DynamoDBProperty]
-    public string Title { get; set; }
-    [DynamoDBProperty]
-    public string ISBN { get; set; }
-    [DynamoDBProperty("Authors")]    // Multi-valued (set type) attribute. 
-    public List<string> BookAuthors { get; set; }
-}
