@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,8 +8,10 @@ using UnityEngine.EventSystems;
 using Amazon;
 using Amazon.DynamoDBv2.Model;
 using Amazon.DynamoDBv2.DataModel;
+using Amazon.DynamoDBv2.Internal;
 using Amazon.CognitoIdentity;
 using Amazon.DynamoDBv2;
+
 
 public class DynamoTest : MonoBehaviour
 {
@@ -32,25 +35,32 @@ public class DynamoTest : MonoBehaviour
         Context = new DynamoDBContext(Client); // アイテム操作は Context というものを介して操作する模様
     }
 
-    private void PerformUpdateOperation()
+    private void RetrieveBook()
     {
-        // Retrieve the book. 
-        //Book bookRetrieved = null;
-        //Context.LoadAsync<Book>(Bookid, (result) => // Update なので、値が取れることは期待
-        //{
-        //    if (result.Exception == null)
+        Debug.Log ("\n*** Load book**\n");
+        // Retrieve the book.
+        Book bookRetrieved = null;
+        int bookID = bookRetrieved.Id;
+
+        //Context.LoadAsync<Book>(1,(AmazonDynamoResult<Book> result) =>{
+        //    if (result.Exception != null)
         //    {
-        //        bookRetrieved = result.Result as Book; // ここは期待通りなら強制キャスト
-        //                                               // Update few properties.
-        //        bookRetrieved.ISBN = "222-2222221001";
-        //        bookRetrieved.BookAuthors = new List<string> { " Author 1", "Author x" }; // Replace existing authors list with this.
-        //        Context.SaveAsync<Book>(bookRetrieved, (res) => // 更新したデータ構造をそのままコピーします
-        //        {
-        //            if (res.Exception == null)
-        //                resultText.text += ("\nBook updated");
-        //        });
+
+        //       Debug.Log("LoadAsync error" + result.Exception.Message);
+        //       Debug.LogException(result.Exception);
+        //       return;
         //    }
-        //});
+        //var _retrievedBook = result.Response;
+        //Debug.Log("Retrieved Book: " + "\nId=" + _retrievedBook.Id + "\nTitle=" + _retrievedBook.Title + "\nISBN=" + _retrievedBook.ISBN);
+        //string authors = "";
+        //foreach (string author in _retrievedBook.BookAuthors)
+        //     authors += author + ",";
+        //     this.displayMessage += "\nBookAuthor= " + authors;
+        //     this.displayMessage += ("\nDimensions= " + _retrievedBook.Dimensions.Length + " X " + _retrievedBook.Dimensions.Height + " X " +  _retrievedBook.Dimensions.Thickness);
+
+        //}, null);
     }
+
 }
+
 

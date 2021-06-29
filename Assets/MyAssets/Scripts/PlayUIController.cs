@@ -11,6 +11,7 @@ using Amazon.DynamoDBv2.Model;
 using Amazon.DynamoDBv2.DataModel;
 using Amazon.CognitoIdentity;
 using System.Threading.Tasks;
+using System.Threading;
 
 public class PlayUIController : MonoBehaviour
 {
@@ -52,9 +53,10 @@ public class PlayUIController : MonoBehaviour
             var _CognitoPoolRegion = RegionEndpoint.GetBySystemName(AWSCognitoIDs.CognitoPoolRegion);
             Credentials = new CognitoAWSCredentials(IdentityPoolId, _CognitoPoolRegion); // ID プールの ID を文字列で指定
             var _DynamoRegion = RegionEndpoint.GetBySystemName(AWSCognitoIDs.DynamoRegion);
-            Credentials.AddLogin("cognito-idp." + region +".amazonaws.com/" + UserPoolID, AWSCognitoIDs.IDToken);
             Client = new AmazonDynamoDBClient(Credentials,RegionEndpoint.USEast1); // ユーザープール使っていない、つまり未認証の権限ロールを使用することになります。
             Context = new DynamoDBContext(Client); // アイテム操作は Context というものを介して操作する模様
+
+            
         }
 
 
@@ -96,7 +98,7 @@ public class PlayUIController : MonoBehaviour
     {
         //チャット内容をDynamoDBに送信する処理（AWS側の処理）
         //PutItem(Client, chat);
-        Write(Context, chat);
+        Write();
 
     }
 
@@ -164,7 +166,7 @@ public class PlayUIController : MonoBehaviour
         
 
     }
-    private void Write(DynamoDBContext context, string chatText)
+    private void Write()
     {
         //var bookBatch = context.CreateBatchWrite<Book>();
 
@@ -174,9 +176,33 @@ public class PlayUIController : MonoBehaviour
         //};
 
         //bookBatch.AddPutItem(book1);
+        //DynamoDBContext context, string chatText
 
 
+        Book myBook = new Book
+        {
+            Id = 1001,
+            NewValue = "object persistence-AWS SDK for.NET SDK-Book 1001",
+            //ISBN = "111-1111111001",
+            //BookAuthors = new List<string> { "Author 1", "Author 2" },
+        };
+        // Save the book.
+        CancellationToken result;
+        Context.SaveAsync(myBook,result);
     }
+}
+
+[DynamoDBTable("BookStore"),Serializable]
+public class Book
+{
+    [DynamoDBHashKey]   // Hash key.
+    public int Id { get; set; }
+    [DynamoDBProperty]
+    public string NewValue { get; set; }
+    //[DynamoDBProperty]
+    //public string ISBN { get; set; }
+    //[DynamoDBProperty("Authors")]    // Multi-valued (set type) attribute.
+    //public List<string> BookAuthors { get; set; }
 }
 
 
