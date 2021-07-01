@@ -22,7 +22,7 @@ public class PlayUIController : MonoBehaviour
     CognitoAWSCredentials Credentials;
     int Bookid = 1001,count = 0;
     DynamoDBContext Context;
-    bool getchat = false;
+    float getchat = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -154,29 +154,40 @@ public class PlayUIController : MonoBehaviour
 
     private void PutItem(IAmazonDynamoDB client, string chatText)
     {
+        getItemChat();
         //リクエストの構築
+        count++;
+        DateTime dt = DateTime.Now;
+        string nowtime = dt.Year.ToString() + dt.Month.ToString() + dt.Day.ToString() + dt.Hour.ToString() + dt.Minute.ToString() + dt.Second.ToString() + dt.Millisecond.ToString();
         PutItemRequest request = new PutItemRequest
         {
             TableName = "UnityChat",//追加先のテーブル名
                                     //各カラムの値を指定
             Item = new Dictionary<string, AttributeValue>
                 {
-                    {"Name",new AttributeValue{S = "TestUser" + count.ToString()} },
-                    {"Chat",new AttributeValue{S = chatText } }
+                    {"ID",new AttributeValue{N = count.ToString()} },
+                    {"Date",new AttributeValue{N = nowtime} },
+                    {"ChatText",new AttributeValue{S = chatText } },
+                    {"UserName",new AttributeValue{S = "TestUser" } }
                 }
         };
         //テーブルに追加
         var result = client.PutItemAsync(request).Result;
-        
+        getItemChat();
 
     }
 
     private void Update()
     {
-        if(getchat == false)
-        {
-           //getItemChat();
+        if(getchat >= 10)
+        {           
+           getItemChat();
+            getchat = 0;
         }
+        else {
+            getchat += Time.deltaTime;
+        }
+
 
     }
 
@@ -184,60 +195,72 @@ public class PlayUIController : MonoBehaviour
     {
         GetItemRequest request = new GetItemRequest
         {
-            Key = new Dictionary<string, AttributeValue>() { { "Name", new AttributeValue {S = "TestUser"} } },
-            TableName = "UnityChat"
+            Key = new Dictionary<string, AttributeValue>()
+            {
+                { "UserName", new AttributeValue {S = "TestUser"} }
+            },
+            TableName = "UnityChat",                            
         };
 
-        if(request == null)
-        {
-            Debug.Log("null");
-        }
         try {
-            //var res = await Client.GetItemAsync(request);
+            //var res1 = await Client.GetItemAsync(request);
             var req = new ScanRequest("UnityChat");
             var res = await Client.ScanAsync(req);
             Text  text= GameObject.Find("Canvas/Panel/Text").GetComponent<Text>();
+            text.text = null;
             var items = res.Items;
+            int i = 0;
+            text.text = null;
+            foreach(IDictionary<string, AttributeValue> item in items)
+            {
+                Debug.Log(item.Keys);
+                setChat(text,item);
+                i++;
+                
+            }
+            count = i;
+            Debug.Log(count);
             //PrintChat(text,res.Items); 
         }
         catch(Exception ex)
         {
             Debug.LogError(ex);
         }
-        Debug.Log("test");
 
     }
 
-    private void PrintChat(Text ChatCanvas,IDictionary<string, AttributeValue> attributeList)
+
+    private void setChat(Text　text,IDictionary<string, AttributeValue> attributeList)
     {
-        Debug.Log("chatprint");
+        string Username = "", chat = "", ID = "";
         int i = 0;
-        string Username = "", chat = "";
         foreach (KeyValuePair<string,AttributeValue> kvp in attributeList)
         {
             string attributeName = kvp.Key;
             AttributeValue Value = kvp.Value;
 
-            //Debug.Log(attributeName +"," +
-            //    (Value.S == null ? "" : "S=[" + Value.S + "]") +
-            //        (Value.N == null ? "" : "N=[" + Value.N + "]") +
-            //        (Value.SS == null ? "" : "SS=[" + string.Join(",", Value.SS.ToArray()) + "]") +
-            //        (Value.NS == null ? "" : "NS=[" + string.Join(",", Value.NS.ToArray()) + "]")
-            //    );
-            if(i%2 == 0)
-            {
-                chat = Value.S;
+            switch(attributeName){
+                case "ID":
+                    ID = Value.N;
+                    break;
+                case "ChatText":
+                    chat = Value.S;
+                    break;
+                case "UserName":
+                    Username = Value.S;
+                    break;
+                default:
+                    break;
             }
-            else
+            if(chat != "" && Username != "")
             {
-                Username = Value.S;
-                ChatCanvas.text = Username + ":" + chat + "\n";
+                text.text += Username + ":" + chat + "\n";
+                chat = "";
+                Username = chat;
             }
             i++;
         }
-
-        Debug.Log(ChatCanvas.text);
-
+        
     }
 }
 
