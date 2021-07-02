@@ -1,6 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.Linq;
+using System.Diagnostics;
+using System.Net.NetworkInformation;
+using Amazon;
+using Amazon.GameLift;
+using Amazon.GameLift.Model;
 
 public class charController : MonoBehaviour
 {
@@ -12,6 +19,24 @@ public class charController : MonoBehaviour
     private string sex;
     private Animator animator;
     Rigidbody rigidbody;
+
+    class GameLiftConfig
+    {
+        public RegionEndpoint RegionEndPoint { get; set; }
+        public string AccessKeyId { get; set; }
+        public string SecretAccessKey { get; set; }
+        public string GameLiftAliasId { get; set; }
+    }
+
+   GameLiftConfig config = new GameLiftConfig
+    {
+        RegionEndPoint = RegionEndpoint.USEast1,
+        AccessKeyId = "AKIAX5IKZ7C57E7JG2XI",
+        SecretAccessKey = "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",
+        GameLiftAliasId = "alias-e8833599-f4ae-4d6d-98db-37dbed92b017"
+    };
+    AmazonGameLiftClient gameLiftClient;  
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +48,8 @@ public class charController : MonoBehaviour
         walk = animator.GetInteger("walk");
         PlayerPrefs.SetInt("State", 0);
         sex = PlayerPrefs.GetString("sex");
+
+        gameLiftClient = new AmazonGameLiftClient(config.AccessKeyId,config.SecretAccessKey,config.RegionEndPoint);
     }
 
     // Update is called once per frame
@@ -78,19 +105,19 @@ public class charController : MonoBehaviour
             }
         }
 
-        if(this.sex != PlayerPrefs.GetString("sex"))
+        if (this.sex != PlayerPrefs.GetString("sex"))
         {
             //プレイヤーのモデルを置き換える
-            Debug.Log(this.transform.root.name);
+            UnityEngine.Debug.Log(this.transform.root.name);
             GameObject Model = GameObject.Find(this.transform.root.name + "/Model");
-            if(Model == null)
+            if (Model == null)
             {
-                Debug.Log("null");
+                UnityEngine.Debug.Log("null");
                 Model = GameObject.Find(this.transform.root.name + this.sex + "(Clone)");
             }
             targetController target = GameObject.Find(this.transform.root.name + "/CameraTarget").GetComponent<targetController>();
             GameObject NewModel = (GameObject)Resources.Load(PlayerPrefs.GetString("sex"));
-            Instantiate(NewModel,this.gameObject.transform.position, this.transform.rotation, this.transform.root.gameObject.transform);
+            Instantiate(NewModel, this.gameObject.transform.position, this.transform.rotation, this.transform.root.gameObject.transform);
             target.PlayerModel = GameObject.Find(this.transform.root.name + PlayerPrefs.GetString("sex") + "(Clone)");
             Destroy(Model);
             this.sex = PlayerPrefs.GetString("sex");
@@ -107,3 +134,4 @@ public class charController : MonoBehaviour
         }
     }
 }
+

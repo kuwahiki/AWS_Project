@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{545C0A3C-7EDF-29E0-D43B-59D927CB6951}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/PlayUIController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/charController.cs">
     <Files>
-      <File FileName="Assets/MyAssets/Scripts/PlayUIController.cs" Line="257" Column="28" />
-      <File FileName="Assets/MyAssets/Scripts/charController.cs" />
-      <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" />
-      <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" />
+      <File FileName="Assets/MyAssets/Scripts/PlayUIController.cs" Line="266" Column="28" />
+      <File FileName="Assets/MyAssets/Scripts/charController.cs" Line="113" Column="1" />
+      <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" Line="27" Column="10" />
+      <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" Line="1" Column="1" />
       <File FileName="Assets/MyAssets/Scripts/PlayMenuController.cs" />
       <File FileName="Assets/MyAssets/Scripts/TitleUIController.cs" />
       <File FileName="Assets/MyAssets/Scripts/AWSCognitoIDs.cs" />
@@ -13,6 +13,9 @@
       <File FileName="Assets/MyAssets/Scripts/Confirmation.cs" />
       <File FileName="Assets/MyAssets/Scripts/DynamoTest.cs" />
       <File FileName="Assets/MyAssets/Scripts/AmazonDynamoDBAttributes.cs" />
+      <File FileName="Assets/MyAssets/Scripts/Source/Commands/ClientEvent.cs" Line="13" Column="45" />
+      <File FileName="Assets/MyAssets/Scripts/RealTimeClient.cs" Line="87" Column="20" />
+      <File FileName="Assets/MyAssets/Scripts/PlayerMoveMes.cs" Line="5" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

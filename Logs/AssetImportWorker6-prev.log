@@ -1,0 +1,29 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+/Users/a50621/workspace/AWS_Project
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+58667
+Successfully changed project path to: /Users/a50621/workspace/AWS_Project
+/Users/a50621/workspace/AWS_Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 14692.12 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/a50621/workspace/AWS_Project/Assets
+GfxDevice: creating device client; threaded=0
+2021-07-01 10:03:39.166 Unity[46509:867431] iMac preferred device: AMD Radeon Pro 555X (high power)
+2021-07-01 10:03:39.183 Unity[46509:867431] Metal devices available: 1
+2021-07-01 10:03:39.183 Unity[46509:867431] 0: AMD Radeon Pro 555X (high power)
+2021-07-01 10:03:39.184 Unity[46509:867431] Using device AMD Radeon Pro 555X (high power)
+Initializing Metal device caps: AMD Radeon Pro 555X
