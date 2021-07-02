@@ -1,5 +1,6 @@
 using System.Collections;
 using System.IO;
+using System.Linq;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -167,7 +168,7 @@ public class PlayUIController : MonoBehaviour
                 {
                     {"ID",new AttributeValue{N = count.ToString()} },
                     {"Date",new AttributeValue{N = nowtime} },
-                    {"ChatText",new AttributeValue{S = chatText } },
+                    {"Text",new AttributeValue{S = chatText } },
                     {"UserName",new AttributeValue{S = "TestUser" } }
                 }
         };
@@ -207,16 +208,25 @@ public class PlayUIController : MonoBehaviour
             var req = new ScanRequest("UnityChat");
             var res = await Client.ScanAsync(req);
             Text  text= GameObject.Find("Canvas/Panel/Text").GetComponent<Text>();
-            text.text = null;
             var items = res.Items;
             int i = 0;
             text.text = null;
+            var chatdate = new SortedDictionary<string, string>();
             foreach(IDictionary<string, AttributeValue> item in items)
             {
-                Debug.Log(item.Keys);
-                setChat(text,item);
+                setChat(item,chatdate);
                 i++;
                 
+            }
+            int set = 1;
+            Debug.Log(i);
+            if(i >= 14)
+            {
+                set = i - 12;
+            }
+            for(int j = set; j  <= i; j++)
+            {
+                text.text +=  chatdate[j.ToString()];
             }
             count = i;
             Debug.Log(count);
@@ -230,10 +240,9 @@ public class PlayUIController : MonoBehaviour
     }
 
 
-    private void setChat(Text　text,IDictionary<string, AttributeValue> attributeList)
+    private void setChat(IDictionary<string, AttributeValue> attributeList, SortedDictionary<string, string> data)
     {
         string Username = "", chat = "", ID = "";
-        int i = 0;
         foreach (KeyValuePair<string,AttributeValue> kvp in attributeList)
         {
             string attributeName = kvp.Key;
@@ -243,7 +252,7 @@ public class PlayUIController : MonoBehaviour
                 case "ID":
                     ID = Value.N;
                     break;
-                case "ChatText":
+                case "Text":
                     chat = Value.S;
                     break;
                 case "UserName":
@@ -254,12 +263,17 @@ public class PlayUIController : MonoBehaviour
             }
             if(chat != "" && Username != "")
             {
-                text.text += Username + ":" + chat + "\n";
+                string str = Username + ":" + chat + "\n";
                 chat = "";
                 Username = chat;
+                data.Add(ID, str);
             }
-            i++;
         }
+        //var setchat = chatdate.OrderBy(x => x.Key);
+        //foreach(var res in chatdate) {
+        //    Debug.Log("id ="  + res.Key);
+        //    text.text += res.Value;
+        //}
         
     }
 }
