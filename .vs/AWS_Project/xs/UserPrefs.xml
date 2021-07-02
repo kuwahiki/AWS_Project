@@ -12,12 +12,12 @@
       <File FileName="Assets/MyAssets/Scripts/SignUp.cs" />
       <File FileName="Assets/MyAssets/Scripts/Confirmation.cs" />
       <File FileName="Assets/MyAssets/Scripts/DynamoTest.cs" />
-      <File FileName="Assets/MyAssets/Scripts/AmazonDynamoDBAttributes.cs" Line="21" Column="6" />
+      <File FileName="Assets/MyAssets/Scripts/AmazonDynamoDBAttributes.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6c644c38-c0f5-4c20-bf51-5e5c9809e11c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f4700549-3cd0-4d20-b754-5d5607222d53" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
