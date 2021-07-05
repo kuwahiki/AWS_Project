@@ -28,9 +28,9 @@ public class MainMenuUIController : MonoBehaviour
     GameLiftConfig config = new GameLiftConfig
     {
         RegionEndPoint = RegionEndpoint.USEast1,
-        AccessKeyId = "AKIAX5IKZ7C57E7JG2XI",
-        SecretAccessKey = "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",
-        GameLiftAliasId = "alias-e8833599-f4ae-4d6d-98db-37dbed92b017"
+        AccessKeyId = "AKIAX5IKZ7C5WR7YBJ5W",
+        SecretAccessKey = "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",
+        GameLiftAliasId = "alias-69cf940b-7d2a-4cad-a2c0-6e21792217f5"
     };
     AmazonGameLiftClient gameLiftClient;
     // Start is called before the first frame update
@@ -43,7 +43,7 @@ public class MainMenuUIController : MonoBehaviour
         for (int i = 0;i < menu_elem.Length;i++)
         {
             menu_elem[i] = menu_base.transform.GetChild(i).gameObject;
-            print(menu_elem[i].name);
+            //print(menu_elem[i].name);
 
             EventTrigger eventTrigger = menu_elem[i].GetComponent<EventTrigger>();
             EventTrigger.Entry entry = new EventTrigger.Entry();
@@ -52,13 +52,22 @@ public class MainMenuUIController : MonoBehaviour
             {
                 case 0:
                     entry.callback.AddListener((BaseEventData eventData) => {
-                        
+                        var rooms = SearchRooms();
+                        foreach(GameSession session in rooms)
+                        {
+                            UnityEngine.Debug.Log(session.Name);
+                            DeleteGameSessionQueueRequest deleteGame = new DeleteGameSessionQueueRequest{
+                                 Name = session.GameSessionId
+                            };
+                            gameLiftClient.DeleteGameSessionQueue(deleteGame);
+                        }
                     });
                     break;
                 case 1:
                     entry.callback.AddListener((BaseEventData eventData) => {
-                       
-                    });
+                        GameObject CreateUI = (GameObject)Resources.Load("CreateUI");
+                        Instantiate(CreateUI,Canvas.transform.position, Quaternion.identity, Canvas.transform);
+                   });
                     break;
                 case 2:
                     entry.callback.AddListener((BaseEventData eventData) => {
@@ -85,20 +94,6 @@ public class MainMenuUIController : MonoBehaviour
     {
     }
 
-    // ルームの作成
-    void CreateRoom(string roomName = "")
-    {
-        UnityEngine.Debug.Log("CreateRoom");
-        if (string.IsNullOrEmpty(roomName)) roomName = Guid.NewGuid().ToString();
-        var request = new CreateGameSessionRequest
-        {
-            AliasId = config.GameLiftAliasId,
-            MaximumPlayerSessionCount = 2,
-            Name = roomName
-        };
-        var response = gameLiftClient.CreateGameSession(request);
-    }
-
     //ルームの検索
     public List<GameSession> SearchRooms()
     {
@@ -109,4 +104,18 @@ public class MainMenuUIController : MonoBehaviour
         });
         return response.GameSessions;
     }
+
+    // ルームの作成
+    //void CreateRoom(string roomName = "")
+    //{
+    //    UnityEngine.Debug.Log("CreateRoom");
+    //    if (string.IsNullOrEmpty(roomName)) roomName = Guid.NewGuid().ToString();
+    //    var request = new CreateGameSessionRequest
+    //    {
+    //        AliasId = config.GameLiftAliasId,
+    //        MaximumPlayerSessionCount = 2,
+    //        Name = roomName
+    //    };
+    //    var response = gameLiftClient.CreateGameSession(request);
+    //}
 }

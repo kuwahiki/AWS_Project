@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{545C0A3C-7EDF-29E0-D43B-59D927CB6951}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/charController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/MainMenuUIController.cs">
     <Files>
-      <File FileName="Assets/MyAssets/Scripts/PlayUIController.cs" Line="266" Column="28" />
+      <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" Line="62" Column="66" />
+      <File FileName="Assets/MyAssets/Scripts/PlayUIController.cs" Line="96" Column="77" />
       <File FileName="Assets/MyAssets/Scripts/charController.cs" Line="113" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" Line="27" Column="10" />
-      <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" Line="1" Column="1" />
+      <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" />
       <File FileName="Assets/MyAssets/Scripts/PlayMenuController.cs" />
       <File FileName="Assets/MyAssets/Scripts/TitleUIController.cs" />
       <File FileName="Assets/MyAssets/Scripts/AWSCognitoIDs.cs" />
@@ -13,14 +13,14 @@
       <File FileName="Assets/MyAssets/Scripts/Confirmation.cs" />
       <File FileName="Assets/MyAssets/Scripts/DynamoTest.cs" />
       <File FileName="Assets/MyAssets/Scripts/AmazonDynamoDBAttributes.cs" />
-      <File FileName="Assets/MyAssets/Scripts/Source/Commands/ClientEvent.cs" Line="13" Column="45" />
-      <File FileName="Assets/MyAssets/Scripts/RealTimeClient.cs" Line="87" Column="20" />
-      <File FileName="Assets/MyAssets/Scripts/PlayerMoveMes.cs" Line="5" Column="27" />
+      <File FileName="Assets/MyAssets/Scripts/RealTimeClient.cs" />
+      <File FileName="Assets/MyAssets/Scripts/PlayerMoveMes.cs" />
+      <File FileName="Assets/MyAssets/Scripts/CreateUIController.cs" Line="25" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f4700549-3cd0-4d20-b754-5d5607222d53" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1a81eaea-8bc2-4b68-9b5a-a1e3a6e0f565" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

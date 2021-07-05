@@ -1,45 +1,2659 @@
 Using pre-set license
 
  COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MacOS/Unity
+/Applications/Unity/2020.3.7f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/a50621/workspace/AWS_Project
+/Users/a403/UnityWorkspace/AWS_Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58667
+<<<<<<< HEAD
+62521
 Successfully changed project path to: /Users/a50621/workspace/AWS_Project
 /Users/a50621/workspace/AWS_Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 663.47 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 73.28 ms, found 1 plugins.
+=======
+50593
+Successfully changed project path to: /Users/a403/UnityWorkspace/AWS_Project
+/Users/a403/UnityWorkspace/AWS_Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 50.26 ms, found 1 plugins.
+>>>>>>> 7ceb36e447cfa2f2306e5541bb46aa5f91a7ec6c
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/a50621/workspace/AWS_Project/Assets
+[Subsystems] Discovering subsystems at path /Applications/Unity/2020.3.7f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/a403/UnityWorkspace/AWS_Project/Assets
 GfxDevice: creating device client; threaded=0
-2021-07-01 10:00:18.882 Unity[46456:865880] iMac preferred device: AMD Radeon Pro 555X (high power)
-2021-07-01 10:00:18.882 Unity[46456:865880] Metal devices available: 1
-2021-07-01 10:00:18.882 Unity[46456:865880] 0: AMD Radeon Pro 555X (high power)
-2021-07-01 10:00:18.882 Unity[46456:865880] Using device AMD Radeon Pro 555X (high power)
+<<<<<<< HEAD
+2021-07-02 13:26:14.627 Unity[54926:1071546] iMac preferred device: AMD Radeon Pro 555X (high power)
+2021-07-02 13:26:14.629 Unity[54926:1071546] Metal devices available: 1
+2021-07-02 13:26:14.629 Unity[54926:1071546] 0: AMD Radeon Pro 555X (high power)
+2021-07-02 13:26:14.629 Unity[54926:1071546] Using device AMD Radeon Pro 555X (high power)
 Initializing Metal device caps: AMD Radeon Pro 555X
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56926
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.077928 seconds.
+Registered in 0.027904 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 33.42 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 27.41 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in 16.574 seconds
+- Completed reload, in  2.416 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+Registered in 0.025616 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.256 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1463 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.8 MB.
+System memory in use after: 140.0 MB.
+
+Unloading 95 unused Assets to reduce memory usage. Loaded Objects now: 1826.
+Total: 14.041715 ms (FindLiveObjects: 0.258024 ms CreateObjectMapping: 0.079054 ms MarkObjects: 2.355955 ms  DeleteObjects: 11.347451 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Plugins
+  artifactKey: Guid(c29361b82d84043ea983b77489c5c348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(c29361b82d84043ea983b77489c5c348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bc831070f96598ae67830762b386088') in 0.003454 seconds
+  Import took 0.006053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Plugins/AWSSDK
+  artifactKey: Guid(f3b2f2f9baf0048ea8501c9ab730a8bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/AWSSDK using Guid(f3b2f2f9baf0048ea8501c9ab730a8bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '687874828dc7b49dde826891f33206cd') in 0.000943 seconds
+  Import took 0.002853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Flore1_Nomal.jpg
+  artifactKey: Guid(c222f2f8364ea45988900c43c073c226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flore1_Nomal.jpg using Guid(c222f2f8364ea45988900c43c073c226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ea96824d0d8030f413e5afdd1b58d8') in 0.956361 seconds
+  Import took 0.958632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Flore1.jpg
+  artifactKey: Guid(a0c85ebddc0d84ad99a1579add085570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flore1.jpg using Guid(a0c85ebddc0d84ad99a1579add085570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd41db7513c39947b43e1fcc284ba8d56') in 0.036938 seconds
+  Import took 0.039016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Resources/DOTweenSettings.asset
+  artifactKey: Guid(bcff62b1860024946bb53acaecf0dd98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/DOTweenSettings.asset using Guid(bcff62b1860024946bb53acaecf0dd98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f0e095ce526eb1cde81dc84948d2f73') in 0.770748 seconds
+  Import took 0.773002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Player_Woman.prefab
+  artifactKey: Guid(76678ba1fc2bc4f2fb3d75b86747f19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player_Woman.prefab using Guid(76678ba1fc2bc4f2fb3d75b86747f19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce216956a9e94c21ac7f7643de1bfea9') in 0.935290 seconds
+  Import took 0.938458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Player_Man.prefab
+  artifactKey: Guid(115a6ffa360394d63b951d9a7b149d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player_Man.prefab using Guid(115a6ffa360394d63b951d9a7b149d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf0d3986e19eeb9524353db5c40c3a3') in 0.212108 seconds
+  Import took 0.214811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.703620 seconds.
+  path: Assets/Motions/Game_Motion_Idle.fbx
+  artifactKey: Guid(38c3a1736c4ce49bcba2bbcfc95ccf93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Motions/Game_Motion_Idle.fbx using Guid(38c3a1736c4ce49bcba2bbcfc95ccf93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d3f4133099e19569d4e307ad472efbe') in 0.853121 seconds
+  Import took 0.898436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Motions/Game_Motion_Walking_woman.fbx
+  artifactKey: Guid(e908a987f11da4f68a678fb3d97ab69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Motions/Game_Motion_Walking_woman.fbx using Guid(e908a987f11da4f68a678fb3d97ab69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c519b5521652b8a12e01cd9ebc6d020') in 0.051951 seconds
+  Import took 0.054666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Motions/Game_Motion_Jump.fbx
+  artifactKey: Guid(ca7feb066495b4218badb4bdbd7e243f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Motions/Game_Motion_Jump.fbx using Guid(ca7feb066495b4218badb4bdbd7e243f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f4b9c38b0c8d3676fee61bc056fd180') in 0.147339 seconds
+  Import took 0.151702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Motions/Game_Motion_Idle_Woman.fbx
+  artifactKey: Guid(2b0755a14299c4bbaad2a00cf771749a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Motions/Game_Motion_Idle_Woman.fbx using Guid(2b0755a14299c4bbaad2a00cf771749a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8a0ae81ce2d78efa0db5d70497e3e6') in 0.076321 seconds
+  Import took 0.079910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Motions/Game_Motion_Walking.fbx
+  artifactKey: Guid(b43fe6c274b424149a9785315a68b70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Motions/Game_Motion_Walking.fbx using Guid(b43fe6c274b424149a9785315a68b70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f33e3f63e671b8917b27df8dc912421') in 0.131263 seconds
+  Import took 0.134240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 795.838550 seconds.
+  path: Assets/MyAssets/Resources/Edit_Model.prefab
+  artifactKey: Guid(3965ba4942c6c427193bc0f97f2c3a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/Edit_Model.prefab using Guid(3965ba4942c6c427193bc0f97f2c3a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bad3c7616c5d1077972c2e150297fe99') in 0.232016 seconds
+  Import took 0.240419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/MyAssets/Resources/EditUI_Wall.prefab
+  artifactKey: Guid(f9198ff0b1dfb4079aafdf8edd4ab032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/EditUI_Wall.prefab using Guid(f9198ff0b1dfb4079aafdf8edd4ab032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '970adf47a75b0bc377a6ec225970d349') in 0.064587 seconds
+  Import took 0.066852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/MyAssets/Resources/Logout.prefab
+  artifactKey: Guid(af1669655ba63438abde0a0774ab081f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/Logout.prefab using Guid(af1669655ba63438abde0a0774ab081f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff35a74ee7741304590aa22b9d0a9760') in 0.050845 seconds
+  Import took 0.052811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/MyAssets/Resources/EditUI_Flore.prefab
+  artifactKey: Guid(3f8d7e220881e4fd0ab087a512483dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/EditUI_Flore.prefab using Guid(3f8d7e220881e4fd0ab087a512483dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e1ef82a6976b3399c65e7201c2ece7c') in 0.083857 seconds
+  Import took 0.086113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/MyAssets/Resources/Player_Man.prefab
+  artifactKey: Guid(f1e70f08d8cd540f5a16d74af2409137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/Player_Man.prefab using Guid(f1e70f08d8cd540f5a16d74af2409137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c66cf5b14070daeccdb05eb9f079b03a') in 0.245648 seconds
+  Import took 0.248285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/MyAssets/Resources/PlayMenu.prefab
+  artifactKey: Guid(4285e4fc30c094adebe5d20c6eddf44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/PlayMenu.prefab using Guid(4285e4fc30c094adebe5d20c6eddf44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ae0846e403ef987bdeeafbe8a022a23') in 0.094518 seconds
+  Import took 0.096649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/MyAssets/Resources/LoginUI.prefab
+  artifactKey: Guid(244cd52e532a0473fb6b13f67d00dc49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/LoginUI.prefab using Guid(244cd52e532a0473fb6b13f67d00dc49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27cac8f2fd0100321f9bcb0c8d59dade') in 0.014162 seconds
+  Import took 0.016948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/MyAssets/Resources/Wall3.jpg
+  artifactKey: Guid(2ef3506c301384a6ca07d3ea04828cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/Wall3.jpg using Guid(2ef3506c301384a6ca07d3ea04828cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e17bb40d3373b740e9907e63978d41') in 0.047905 seconds
+  Import took 0.050240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/MyAssets/Resources/Wall1.jpg
+  artifactKey: Guid(488f6f4d00d90434889ee82863bdcb02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/Wall1.jpg using Guid(488f6f4d00d90434889ee82863bdcb02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '333eaf3f4d98f15eccee3f9d45f3781e') in 0.030707 seconds
+  Import took 0.032963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/MyAssets/Resources/woman.prefab
+  artifactKey: Guid(f5882b0955e484f9bb53a0d6e7095324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/woman.prefab using Guid(f5882b0955e484f9bb53a0d6e7095324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1822e04fe38b8923de10e4eaabba339f') in 0.236707 seconds
+  Import took 0.239517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/MyAssets/Resources/Help.prefab
+  artifactKey: Guid(acc5ad7bd5fe54d70871a9682f2d5807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/Help.prefab using Guid(acc5ad7bd5fe54d70871a9682f2d5807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2d1bd71130b09fa0a08034cbcb1d79c') in 0.016794 seconds
+  Import took 0.018960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/MyAssets/Resources/Wall2.jpg
+  artifactKey: Guid(4ae20ccfff5744be69b55a75eabcebde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/Wall2.jpg using Guid(4ae20ccfff5744be69b55a75eabcebde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dd31f8fbc52b5b154d2294932aed136') in 0.015704 seconds
+  Import took 0.018198 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/MyAssets/Resources/SettingUI.prefab
+  artifactKey: Guid(6b1f80cbcf53f443585e11a941b12417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/SettingUI.prefab using Guid(6b1f80cbcf53f443585e11a941b12417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d2788ae66d17d0df9b2d15dbf29af1') in 0.006436 seconds
+  Import took 0.008791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/MyAssets/Resources/SignUpUI.prefab
+  artifactKey: Guid(98b8e728b7483419fb7d87ef0946685c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/SignUpUI.prefab using Guid(98b8e728b7483419fb7d87ef0946685c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eaf1d5c1a3b0a870f0da0248dbbd0de') in 0.056210 seconds
+  Import took 0.058698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/MyAssets/Resources/WallMaterial.mat
+  artifactKey: Guid(f6df8c61b0a524e3e96a4ea12f2d5823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/WallMaterial.mat using Guid(f6df8c61b0a524e3e96a4ea12f2d5823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14f0002d0f6fb67239ea9ed22c307586') in 0.380280 seconds
+  Import took 0.382384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/MyAssets/Resources/Flore2.jpg
+  artifactKey: Guid(9788844d99078447a94ddcc8c05e1b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/Flore2.jpg using Guid(9788844d99078447a94ddcc8c05e1b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a5c0502f1c2c3d9430e14257442aa4') in 0.028542 seconds
+  Import took 0.030579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/MyAssets/Resources/Flore1.jpg
+  artifactKey: Guid(c4e44daa4a5b04671bed1b4d3200b2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/Flore1.jpg using Guid(c4e44daa4a5b04671bed1b4d3200b2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0a5077d94fe4ba9a1127644ca0a8aa') in 0.024049 seconds
+  Import took 0.026089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/MyAssets/Resources/Flore3.jpg
+  artifactKey: Guid(a54a6418debf5413386a4d36ebc57924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/Flore3.jpg using Guid(a54a6418debf5413386a4d36ebc57924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace2a6764563e160c1b4d334a31ac832') in 0.023105 seconds
+  Import took 0.025120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/MyAssets/Resources/man.prefab
+  artifactKey: Guid(237476d27e5264335a51cf8f2a1ca6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/man.prefab using Guid(237476d27e5264335a51cf8f2a1ca6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3720baeed3cddff86e37360ea75a3f72') in 0.028898 seconds
+  Import took 0.031700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/MyAssets/Resources/FloreMaterial.mat
+  artifactKey: Guid(3ffb45a9756494ec2a079d61a58516cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/FloreMaterial.mat using Guid(3ffb45a9756494ec2a079d61a58516cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46d7b508d78a6e5bc9726b2e4b758090') in 0.403515 seconds
+  Import took 0.405680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/MyAssets/Resources/LogoutUI.prefab
+  artifactKey: Guid(e759d4b9830c54754bf5bed3a1774ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/LogoutUI.prefab using Guid(e759d4b9830c54754bf5bed3a1774ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a41bccca25f677dd42ed8996b77071df') in 0.003522 seconds
+  Import took 0.005911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/MyAssets/Resources/Private_chat.prefab
+  artifactKey: Guid(022290af0eb424eab800d856a6fd7e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/Private_chat.prefab using Guid(022290af0eb424eab800d856a6fd7e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b8cc0ea04de3837ce3d46d67f41f71') in 0.003917 seconds
+  Import took 0.006293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000527 seconds.
+  path: Assets/MyAssets/Resources/InputChat.prefab
+  artifactKey: Guid(ebd87005009ff4a79aec7673c2171ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/InputChat.prefab using Guid(ebd87005009ff4a79aec7673c2171ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ecf0cad27eef5c46ae0084bdb7a66b') in 0.004657 seconds
+  Import took 0.007380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/MyAssets/Resources/Player_Woman.prefab
+  artifactKey: Guid(bc32d992b4c3145e3a9b395581194c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Resources/Player_Woman.prefab using Guid(bc32d992b4c3145e3a9b395581194c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e774813c8ef3089b264019a85401c941') in 0.028904 seconds
+  Import took 0.031808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.952797 seconds.
+  path: Assets/MyAssets/Scripts/AWSCognitoIDs.cs
+  artifactKey: Guid(edccc366937f0470d84d13a5cd308529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scripts/AWSCognitoIDs.cs using Guid(edccc366937f0470d84d13a5cd308529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb316c35b29d9dc175eb25911cc9110') in 3.576907 seconds
+  Import took 3.579663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/MyAssets/Scripts/PlayUIController.cs
+  artifactKey: Guid(516c796d834324eebb186fe4e0b9c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scripts/PlayUIController.cs using Guid(516c796d834324eebb186fe4e0b9c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68206dc6fcf87446acfa55a5eb56c41') in 0.007541 seconds
+  Import took 0.010106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.190309 seconds.
+  path: Assets/MyAssets/Scripts/PlayUIController.cs
+  artifactKey: Guid(516c796d834324eebb186fe4e0b9c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scripts/PlayUIController.cs using Guid(516c796d834324eebb186fe4e0b9c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68206dc6fcf87446acfa55a5eb56c41') in 0.003580 seconds
+  Import took 0.005820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 203.507806 seconds.
+  path: Assets/MyAssets/Images/Chat.png
+  artifactKey: Guid(623d485c4460d42dfb7374a41cd2b5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/Chat.png using Guid(623d485c4460d42dfb7374a41cd2b5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ed0b9198ae9d863e2f0af1fffede1d') in 1.753251 seconds
+  Import took 1.756477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/MyAssets/Images/Game_Image_logo.png
+  artifactKey: Guid(58be30945524440abab0c2cc37e0cc51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/Game_Image_logo.png using Guid(58be30945524440abab0c2cc37e0cc51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ba2623316a95196619d5ca5fbb8f17') in 0.128396 seconds
+  Import took 0.131115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/MyAssets/Images/Panel.png
+  artifactKey: Guid(f40b288cf83d24fc4896d249753af93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/Panel.png using Guid(f40b288cf83d24fc4896d249753af93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e99d0f7db314319d06c1e20b20b5c899') in 0.048253 seconds
+  Import took 0.050546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/MyAssets/Images/icons_Info_user.png
+  artifactKey: Guid(6500c903c3489426297d9ff47a2a40c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/icons_Info_user.png using Guid(6500c903c3489426297d9ff47a2a40c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35bde803e45bd3d474bd9f14b17eb1e') in 0.043841 seconds
+  Import took 0.046307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/MyAssets/Images/icons_relode.png
+  artifactKey: Guid(0e448450247d54b48aaf89ac1fa24141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/icons_relode.png using Guid(0e448450247d54b48aaf89ac1fa24141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c78a52ca4d13a24068d7adc03b5734d3') in 0.028002 seconds
+  Import took 0.030287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/MyAssets/Images/icons_delete.png
+  artifactKey: Guid(c20445164c15145aa81ed96650c86b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/icons_delete.png using Guid(c20445164c15145aa81ed96650c86b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc0ecab8d4bdd6daeb4930e5f269a74e') in 0.015234 seconds
+  Import took 0.017708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/MyAssets/Images/icons_Tool.png
+  artifactKey: Guid(dc4fa966c0b5d4c5c9cf83de16fc70eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/icons_Tool.png using Guid(dc4fa966c0b5d4c5c9cf83de16fc70eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c19dc9d649cbdb24bdc8f9af9d9b5c3') in 0.017418 seconds
+  Import took 0.019851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/MyAssets/Images/icons_Back.png
+  artifactKey: Guid(55a89f9bd4479483cb85e850c2162991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/icons_Back.png using Guid(55a89f9bd4479483cb85e850c2162991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '146b5e045cf548f5464888a05ec893d8') in 0.010053 seconds
+  Import took 0.012580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/MyAssets/Images/Game_Image_MainMenu.png
+  artifactKey: Guid(120a9091ec38b4e92b0b5c1af694b8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/Game_Image_MainMenu.png using Guid(120a9091ec38b4e92b0b5c1af694b8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56eeed26ff00bf9dce70444d257ea16a') in 0.045803 seconds
+  Import took 0.048717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/MyAssets/Images/Help.jpg
+  artifactKey: Guid(663ca448fa86d49228ba978219f2a2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/Help.jpg using Guid(663ca448fa86d49228ba978219f2a2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '552142a2bf3b3ffa822ee107aa0d9aa7') in 0.010683 seconds
+  Import took 0.012797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/MyAssets/Images/icons_chat.png
+  artifactKey: Guid(f9fd47422d7b943c3bf51b3e65725dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/icons_chat.png using Guid(f9fd47422d7b943c3bf51b3e65725dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '928ef4083fddb41197176aa76c2a7507') in 0.021579 seconds
+  Import took 0.023756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/MyAssets/Images/PlayMenu.png
+  artifactKey: Guid(b08e7e999c8df438dbf8ba6ed92e1194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/PlayMenu.png using Guid(b08e7e999c8df438dbf8ba6ed92e1194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9acd9d88256b9e33a8a2384be9d57dca') in 0.048135 seconds
+  Import took 0.050703 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/MyAssets/Images/menu_Frame.png
+  artifactKey: Guid(996ab91d5c9574f26a65c4d3059caba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/menu_Frame.png using Guid(996ab91d5c9574f26a65c4d3059caba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b30b235ff2756b1b9406d9a2f6fa41b5') in 0.114167 seconds
+  Import took 0.116344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/MyAssets/Images/icons_help.png
+  artifactKey: Guid(29a48c28264c748b5ba65a940c0ffbf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/icons_help.png using Guid(29a48c28264c748b5ba65a940c0ffbf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aedd0418b18785c8068fedcd5ce17d9') in 0.047044 seconds
+  Import took 0.049331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/MyAssets/Images/New Material.mat
+  artifactKey: Guid(555c2ab5246cc4738901211bd64bad06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/New Material.mat using Guid(555c2ab5246cc4738901211bd64bad06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f329344ae0d0415eade29a10dc757cb9') in 0.313124 seconds
+  Import took 0.316281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Assets/MyAssets/Images/Game_image_title_BG.jpg
+  artifactKey: Guid(3fc8833e0712547ed98bd2defea3bb04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/Game_image_title_BG.jpg using Guid(3fc8833e0712547ed98bd2defea3bb04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72156bed6d8342362e3141f821eab33') in 0.228236 seconds
+  Import took 0.230954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/MyAssets/Images/Woman.png
+  artifactKey: Guid(0d2e902477f354425bccc9d32835ea62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/Woman.png using Guid(0d2e902477f354425bccc9d32835ea62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86e3f4cbef2621c5cc7ad166fbf926d') in 0.176627 seconds
+  Import took 0.179225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/MyAssets/Images/Man.png
+  artifactKey: Guid(a6acff96bff52451383f9bfab6450652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Images/Man.png using Guid(a6acff96bff52451383f9bfab6450652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9d9c81e59b2286c11ebc623149eb135') in 0.122158 seconds
+  Import took 0.124655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 95.759442 seconds.
+  path: Assets/Plugins/AWSSDK/Amazon.Extensions.CognitoAuthentication.dll
+  artifactKey: Guid(9e068fa45e6f7429a8daf428fd0a3b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/AWSSDK/Amazon.Extensions.CognitoAuthentication.dll using Guid(9e068fa45e6f7429a8daf428fd0a3b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2e04c325b88629128c906f205d210f5') in 2.325622 seconds
+  Import took 2.329490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1058.438300 seconds.
+  path: Assets/Plugins/AWSSDK/AWSSDK.CognitoIdentityProvider 1.dll
+  artifactKey: Guid(c7a8d147f2ed9400d9b8bce11bae202e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/AWSSDK/AWSSDK.CognitoIdentityProvider 1.dll using Guid(c7a8d147f2ed9400d9b8bce11bae202e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add6b3a4cec3a51ac045c56d9711ba03') in 0.074906 seconds
+  Import took 0.078149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 202.041943 seconds.
+  path: Assets/Plugins/AWSSDK/AWSSDK.Extensions.CognitoAuthentication.dll
+  artifactKey: Guid(b7ccc790e0faf446d83ae79e3ec9aae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/AWSSDK/AWSSDK.Extensions.CognitoAuthentication.dll using Guid(b7ccc790e0faf446d83ae79e3ec9aae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003f7fbf5fb62ffaaa0fae003ca28435') in 0.041355 seconds
+  Import took 0.044546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.739353 seconds.
+  path: Assets/Plugins/AWSSDK/AWSSDK.CognitoIdentityProvider.dll
+  artifactKey: Guid(063a78d9b1c364890a5df9582e441acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/AWSSDK/AWSSDK.CognitoIdentityProvider.dll using Guid(063a78d9b1c364890a5df9582e441acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa67271beed58e2ac5a7015e4505065f') in 0.011407 seconds
+  Import took 0.013774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006528 seconds.
+  path: Assets/Plugins/AWSSDK/AWSSDK.CognitoIdentityProvider.dll
+  artifactKey: Guid(063a78d9b1c364890a5df9582e441acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/AWSSDK/AWSSDK.CognitoIdentityProvider.dll using Guid(063a78d9b1c364890a5df9582e441acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa67271beed58e2ac5a7015e4505065f') in 0.003710 seconds
+  Import took 0.006493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.009712 seconds.
+  path: Assets/Plugins/AWSSDK/AWSSDK.CognitoIdentity.dll
+  artifactKey: Guid(9ef525b66af3f4197a6154fd30888e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/AWSSDK/AWSSDK.CognitoIdentity.dll using Guid(9ef525b66af3f4197a6154fd30888e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b0c08bb36fd8bcb8a9217168ec9d61d') in 0.024383 seconds
+  Import took 0.026635 seconds .
+=======
+2021-07-01 13:32:03.763 Unity[2613:99775] iMac preferred device: AMD Radeon Pro 5700 XT (high power)
+2021-07-01 13:32:03.763 Unity[2613:99775] Metal devices available: 1
+2021-07-01 13:32:03.763 Unity[2613:99775] 0: AMD Radeon Pro 5700 XT (high power)
+2021-07-01 13:32:03.764 Unity[2613:99775] Using device AMD Radeon Pro 5700 XT (high power)
+Initializing Metal device caps: AMD Radeon Pro 5700 XT
+Initialize mono
+Mono path[0] = '/Applications/Unity/2020.3.7f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/2020.3.7f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/2020.3.7f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56613
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/2020.3.7f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000434 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 26.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.196 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.031320 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6c1570000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.318 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/2020.3.7f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.25 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1737 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.72 GB.
+System memory in use after: 0.71 GB.
+
+Unloading 369 unused Assets to reduce memory usage. Loaded Objects now: 1826.
+Total: 12.350372 ms (FindLiveObjects: 0.265675 ms CreateObjectMapping: 0.103657 ms MarkObjects: 2.214146 ms  DeleteObjects: 9.765571 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Flore1_Nomal.jpg
+  artifactKey: Guid(c222f2f8364ea45988900c43c073c226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flore1_Nomal.jpg using Guid(c222f2f8364ea45988900c43c073c226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ea96824d0d8030f413e5afdd1b58d8') in 0.680656 seconds
+  Import took 0.683134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Flore1.jpg
+  artifactKey: Guid(a0c85ebddc0d84ad99a1579add085570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flore1.jpg using Guid(a0c85ebddc0d84ad99a1579add085570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd41db7513c39947b43e1fcc284ba8d56') in 0.006261 seconds
+  Import took 0.007965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Player_Woman.prefab
+  artifactKey: Guid(76678ba1fc2bc4f2fb3d75b86747f19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player_Woman.prefab using Guid(76678ba1fc2bc4f2fb3d75b86747f19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cf090030acea0d6ec521739734536ae') in 0.881140 seconds
+  Import took 0.883731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Player_Man.prefab
+  artifactKey: Guid(115a6ffa360394d63b951d9a7b149d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player_Man.prefab using Guid(115a6ffa360394d63b951d9a7b149d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dbfc67f4071883fda274921fd416d97') in 0.023443 seconds
+  Import took 0.025558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.564037 seconds.
+  path: Assets/MyAssets/Scripts
+  artifactKey: Guid(0c93eca1dcde94906953a7f8e04a0959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scripts using Guid(0c93eca1dcde94906953a7f8e04a0959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2db536b3cd7f89d94797a4caabd54cc') in 0.000641 seconds
+  Import took 0.002256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010581 seconds.
+  path: Assets/MyAssets/Scripts
+  artifactKey: Guid(0c93eca1dcde94906953a7f8e04a0959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scripts using Guid(0c93eca1dcde94906953a7f8e04a0959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2db536b3cd7f89d94797a4caabd54cc') in 0.000555 seconds
+  Import took 0.002007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.368986 seconds.
+  path: Assets/MyAssets/Scripts/PlayUIController.cs
+  artifactKey: Guid(516c796d834324eebb186fe4e0b9c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scripts/PlayUIController.cs using Guid(516c796d834324eebb186fe4e0b9c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68206dc6fcf87446acfa55a5eb56c41') in 2.073325 seconds
+  Import took 2.075431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.617313 seconds.
+  path: Assets/MyAssets/Scripts/PlayUIController.cs
+  artifactKey: Guid(516c796d834324eebb186fe4e0b9c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scripts/PlayUIController.cs using Guid(516c796d834324eebb186fe4e0b9c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2538cb8abfd571a6bb9696849f784354') in 0.001400 seconds
+  Import took 0.003257 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029080 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6b1ba0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.315 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.74 GB.
+System memory in use after: 0.73 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1841.
+Total: 10.900643 ms (FindLiveObjects: 0.189678 ms CreateObjectMapping: 0.066449 ms MarkObjects: 1.306574 ms  DeleteObjects: 9.336994 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.496630 seconds.
+  path: Assets/MyAssets/Scene/PlayScene.unity
+  artifactKey: Guid(f082e66d6685c47aa80fcf43fe89625a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scene/PlayScene.unity using Guid(f082e66d6685c47aa80fcf43fe89625a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ead9c1083e642c959a82656f88d0f6d') in 0.009755 seconds
+  Import took 0.011765 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028611 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e1568000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.453 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.74 GB.
+System memory in use after: 0.73 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1844.
+Total: 10.740593 ms (FindLiveObjects: 0.226062 ms CreateObjectMapping: 0.043787 ms MarkObjects: 1.115515 ms  DeleteObjects: 9.354578 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029226 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6905e8000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.282 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.73 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1847.
+Total: 13.082752 ms (FindLiveObjects: 0.255086 ms CreateObjectMapping: 0.089388 ms MarkObjects: 1.962066 ms  DeleteObjects: 10.774972 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030165 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6d15c0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.313 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.73 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1850.
+Total: 12.743068 ms (FindLiveObjects: 0.306431 ms CreateObjectMapping: 0.048931 ms MarkObjects: 1.774331 ms  DeleteObjects: 10.611813 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030259 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe680110000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 2.15 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.344 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.73 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1853.
+Total: 12.237468 ms (FindLiveObjects: 0.169532 ms CreateObjectMapping: 0.051521 ms MarkObjects: 1.223912 ms  DeleteObjects: 10.791799 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.027927 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe671510000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.255 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.73 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1856.
+Total: 12.744927 ms (FindLiveObjects: 0.244065 ms CreateObjectMapping: 0.086772 ms MarkObjects: 1.708532 ms  DeleteObjects: 10.688704 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030114 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e1538000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.265 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.73 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1859.
+Total: 12.037391 ms (FindLiveObjects: 0.158330 ms CreateObjectMapping: 0.048321 ms MarkObjects: 1.261983 ms  DeleteObjects: 10.568030 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029664 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e0778000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.237 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.73 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1862.
+Total: 12.976350 ms (FindLiveObjects: 0.243560 ms CreateObjectMapping: 0.090492 ms MarkObjects: 1.901915 ms  DeleteObjects: 10.738868 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028877 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe690b18000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.334 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.73 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1865.
+Total: 11.387611 ms (FindLiveObjects: 0.205764 ms CreateObjectMapping: 0.047910 ms MarkObjects: 1.086977 ms  DeleteObjects: 10.046322 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028786 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e0c68000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.220 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.73 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1868.
+Total: 13.018914 ms (FindLiveObjects: 0.238782 ms CreateObjectMapping: 0.090646 ms MarkObjects: 1.898434 ms  DeleteObjects: 10.789772 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030801 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe671520000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.319 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.73 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1871.
+Total: 11.555649 ms (FindLiveObjects: 0.281283 ms CreateObjectMapping: 0.050784 ms MarkObjects: 1.075585 ms  DeleteObjects: 10.147020 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.031652 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e1540000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.288 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1874.
+Total: 11.746419 ms (FindLiveObjects: 0.198260 ms CreateObjectMapping: 0.048512 ms MarkObjects: 1.091652 ms  DeleteObjects: 10.407279 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.034377 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe670650000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.315 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1877.
+Total: 11.964284 ms (FindLiveObjects: 0.161416 ms CreateObjectMapping: 0.048669 ms MarkObjects: 1.097183 ms  DeleteObjects: 10.656308 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029369 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe651508000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.256 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1880.
+Total: 12.504005 ms (FindLiveObjects: 0.211558 ms CreateObjectMapping: 0.046751 ms MarkObjects: 1.155833 ms  DeleteObjects: 11.089187 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.031607 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe672740000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.236 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1883.
+Total: 13.275744 ms (FindLiveObjects: 0.258612 ms CreateObjectMapping: 0.091945 ms MarkObjects: 1.889947 ms  DeleteObjects: 11.033979 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028175 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe670b78000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.228 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1886.
+Total: 12.632722 ms (FindLiveObjects: 0.243497 ms CreateObjectMapping: 0.046131 ms MarkObjects: 1.146586 ms  DeleteObjects: 11.195879 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.150444 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e06b0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.348 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1889.
+Total: 12.677672 ms (FindLiveObjects: 0.197182 ms CreateObjectMapping: 0.053341 ms MarkObjects: 1.182643 ms  DeleteObjects: 11.243614 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030142 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe651170000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.213 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1892.
+Total: 13.569069 ms (FindLiveObjects: 0.257523 ms CreateObjectMapping: 0.097016 ms MarkObjects: 1.887315 ms  DeleteObjects: 11.325853 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028649 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe661530000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.246 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1895.
+Total: 13.455934 ms (FindLiveObjects: 0.423570 ms CreateObjectMapping: 0.068266 ms MarkObjects: 1.376720 ms  DeleteObjects: 11.586661 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.032543 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e1578000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.290 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1898.
+Total: 12.799665 ms (FindLiveObjects: 0.166523 ms CreateObjectMapping: 0.049815 ms MarkObjects: 1.082849 ms  DeleteObjects: 11.499805 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028075 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e1538000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.244 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1901.
+Total: 13.451624 ms (FindLiveObjects: 0.243732 ms CreateObjectMapping: 0.085019 ms MarkObjects: 1.906055 ms  DeleteObjects: 11.215635 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029001 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe671508000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.366 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1904.
+Total: 12.424841 ms (FindLiveObjects: 0.174863 ms CreateObjectMapping: 0.051402 ms MarkObjects: 1.109611 ms  DeleteObjects: 11.088051 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029023 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6d1578000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.230 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1907.
+Total: 13.132517 ms (FindLiveObjects: 0.256756 ms CreateObjectMapping: 0.044970 ms MarkObjects: 1.136582 ms  DeleteObjects: 11.693519 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030813 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe691508000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.340 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1910.
+Total: 13.032443 ms (FindLiveObjects: 0.279991 ms CreateObjectMapping: 0.043836 ms MarkObjects: 1.167972 ms  DeleteObjects: 11.539826 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029479 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e1538000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.206 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1913.
+Total: 11.987125 ms (FindLiveObjects: 0.245905 ms CreateObjectMapping: 0.057044 ms MarkObjects: 1.247800 ms  DeleteObjects: 10.435742 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029717 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6d15c0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.195 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1916.
+Total: 13.865262 ms (FindLiveObjects: 0.261901 ms CreateObjectMapping: 0.092442 ms MarkObjects: 1.962419 ms  DeleteObjects: 11.547276 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028164 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6c0670000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.214 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1919.
+Total: 13.923541 ms (FindLiveObjects: 0.259667 ms CreateObjectMapping: 0.090950 ms MarkObjects: 1.958873 ms  DeleteObjects: 11.612925 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028969 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6b1ba0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.239 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1922.
+Total: 15.816297 ms (FindLiveObjects: 0.264368 ms CreateObjectMapping: 0.090254 ms MarkObjects: 1.595658 ms  DeleteObjects: 13.864492 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029944 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6d1328000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.249 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1925.
+Total: 12.233576 ms (FindLiveObjects: 0.209437 ms CreateObjectMapping: 0.050040 ms MarkObjects: 1.097251 ms  DeleteObjects: 10.876128 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029227 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6d0268000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.344 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1928.
+Total: 14.065846 ms (FindLiveObjects: 0.181883 ms CreateObjectMapping: 0.053467 ms MarkObjects: 1.215717 ms  DeleteObjects: 12.613901 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028202 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe661150000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.227 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1931.
+Total: 13.962452 ms (FindLiveObjects: 0.260681 ms CreateObjectMapping: 0.093668 ms MarkObjects: 1.971052 ms  DeleteObjects: 11.635885 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028631 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe671530000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.333 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.75 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1934.
+Total: 13.285521 ms (FindLiveObjects: 0.213662 ms CreateObjectMapping: 0.047277 ms MarkObjects: 1.229452 ms  DeleteObjects: 11.794567 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028702 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6a0560000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.220 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1937.
+Total: 14.185560 ms (FindLiveObjects: 0.274735 ms CreateObjectMapping: 0.093638 ms MarkObjects: 1.995591 ms  DeleteObjects: 11.820484 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030513 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e1548000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.257 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1940.
+Total: 14.739111 ms (FindLiveObjects: 0.301385 ms CreateObjectMapping: 0.099218 ms MarkObjects: 2.009151 ms  DeleteObjects: 12.327978 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028039 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe660ae8000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.191 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1943.
+Total: 14.103373 ms (FindLiveObjects: 0.268923 ms CreateObjectMapping: 0.088252 ms MarkObjects: 1.972154 ms  DeleteObjects: 11.772943 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029674 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6c1580000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.221 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1946.
+Total: 13.921967 ms (FindLiveObjects: 0.267114 ms CreateObjectMapping: 0.093811 ms MarkObjects: 1.973483 ms  DeleteObjects: 11.586352 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030317 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6c0338000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.70 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.262 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1949.
+Total: 13.905204 ms (FindLiveObjects: 0.255707 ms CreateObjectMapping: 0.093163 ms MarkObjects: 1.961816 ms  DeleteObjects: 11.593309 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029937 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe660e00000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.248 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.74 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1952.
+Total: 12.055552 ms (FindLiveObjects: 0.233071 ms CreateObjectMapping: 0.049836 ms MarkObjects: 1.119025 ms  DeleteObjects: 10.652964 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030585 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe671508000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.269 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1955.
+Total: 13.322091 ms (FindLiveObjects: 0.255856 ms CreateObjectMapping: 0.095679 ms MarkObjects: 1.905269 ms  DeleteObjects: 11.064011 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029619 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e1578000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.234 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1958.
+Total: 13.742007 ms (FindLiveObjects: 0.271481 ms CreateObjectMapping: 0.096878 ms MarkObjects: 1.931970 ms  DeleteObjects: 11.440333 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028568 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe660740000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.257 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1961.
+Total: 13.099135 ms (FindLiveObjects: 0.220583 ms CreateObjectMapping: 0.047732 ms MarkObjects: 1.214423 ms  DeleteObjects: 11.615732 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029044 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e1548000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.384 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1964.
+Total: 12.948995 ms (FindLiveObjects: 0.258370 ms CreateObjectMapping: 0.088422 ms MarkObjects: 1.924208 ms  DeleteObjects: 10.676787 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030852 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e1568000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.323 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1967.
+Total: 13.341921 ms (FindLiveObjects: 0.177198 ms CreateObjectMapping: 0.043847 ms MarkObjects: 1.172716 ms  DeleteObjects: 11.947458 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.027668 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6906a0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.222 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1970.
+Total: 13.664674 ms (FindLiveObjects: 0.257733 ms CreateObjectMapping: 0.067271 ms MarkObjects: 1.578965 ms  DeleteObjects: 11.759526 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.033544 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6c0538000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.308 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1973.
+Total: 13.003179 ms (FindLiveObjects: 0.211537 ms CreateObjectMapping: 0.047682 ms MarkObjects: 1.165244 ms  DeleteObjects: 11.578070 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028967 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe681530000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.284 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1976.
+Total: 12.695589 ms (FindLiveObjects: 0.347834 ms CreateObjectMapping: 0.062118 ms MarkObjects: 1.396425 ms  DeleteObjects: 10.888586 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029552 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6b14e0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.414 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1979.
+Total: 14.319324 ms (FindLiveObjects: 0.288653 ms CreateObjectMapping: 0.091042 ms MarkObjects: 2.064795 ms  DeleteObjects: 11.873616 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028425 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6c0038000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.236 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1982.
+Total: 12.956169 ms (FindLiveObjects: 0.254359 ms CreateObjectMapping: 0.092568 ms MarkObjects: 1.923032 ms  DeleteObjects: 10.685105 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029133 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6c1448000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.298 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1985.
+Total: 13.837117 ms (FindLiveObjects: 0.284466 ms CreateObjectMapping: 0.093732 ms MarkObjects: 1.991106 ms  DeleteObjects: 11.466534 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029124 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe681540000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.232 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1988.
+Total: 13.546418 ms (FindLiveObjects: 0.268183 ms CreateObjectMapping: 0.096747 ms MarkObjects: 1.942419 ms  DeleteObjects: 11.237979 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.031218 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe661510000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.399 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1991.
+Total: 13.944459 ms (FindLiveObjects: 0.263071 ms CreateObjectMapping: 0.091695 ms MarkObjects: 1.938289 ms  DeleteObjects: 11.650042 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028672 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6c1540000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.262 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1994.
+Total: 13.764094 ms (FindLiveObjects: 0.287345 ms CreateObjectMapping: 0.093197 ms MarkObjects: 1.933016 ms  DeleteObjects: 11.449392 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028975 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6a15d0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.351 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 1997.
+Total: 11.911691 ms (FindLiveObjects: 0.211979 ms CreateObjectMapping: 0.050521 ms MarkObjects: 1.126917 ms  DeleteObjects: 10.521423 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028566 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe691530000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.246 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2000.
+Total: 13.288108 ms (FindLiveObjects: 0.287649 ms CreateObjectMapping: 0.049155 ms MarkObjects: 1.280383 ms  DeleteObjects: 11.670250 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030370 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe691508000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.346 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2003.
+Total: 12.122795 ms (FindLiveObjects: 0.253425 ms CreateObjectMapping: 0.052895 ms MarkObjects: 1.132479 ms  DeleteObjects: 10.683341 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030086 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe681530000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.231 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2006.
+Total: 13.963036 ms (FindLiveObjects: 0.286758 ms CreateObjectMapping: 0.094052 ms MarkObjects: 2.011489 ms  DeleteObjects: 11.569602 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.034026 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe661530000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.277 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2009.
+Total: 13.195653 ms (FindLiveObjects: 0.292584 ms CreateObjectMapping: 0.074918 ms MarkObjects: 1.247104 ms  DeleteObjects: 11.580400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028190 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe670bd0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.264 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2012.
+Total: 13.364189 ms (FindLiveObjects: 0.266907 ms CreateObjectMapping: 0.094420 ms MarkObjects: 1.943378 ms  DeleteObjects: 11.058059 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028484 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe671b98000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.227 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2015.
+Total: 12.903193 ms (FindLiveObjects: 0.222279 ms CreateObjectMapping: 0.052029 ms MarkObjects: 1.191832 ms  DeleteObjects: 11.436216 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029472 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe651550000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.258 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2018.
+Total: 13.402121 ms (FindLiveObjects: 0.279803 ms CreateObjectMapping: 0.094873 ms MarkObjects: 1.988019 ms  DeleteObjects: 11.038270 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028023 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe681518000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.268 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2021.
+Total: 12.528281 ms (FindLiveObjects: 0.253084 ms CreateObjectMapping: 0.053009 ms MarkObjects: 1.113323 ms  DeleteObjects: 11.108266 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028801 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6c1560000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.265 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2024.
+Total: 13.576985 ms (FindLiveObjects: 0.272870 ms CreateObjectMapping: 0.096915 ms MarkObjects: 1.918201 ms  DeleteObjects: 11.287814 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.032064 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe661558000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.294 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2027.
+Total: 12.446521 ms (FindLiveObjects: 0.176775 ms CreateObjectMapping: 0.049553 ms MarkObjects: 1.147911 ms  DeleteObjects: 11.071587 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028533 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6c1560000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.255 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2030.
+Total: 12.875030 ms (FindLiveObjects: 0.220932 ms CreateObjectMapping: 0.047808 ms MarkObjects: 1.207992 ms  DeleteObjects: 11.397651 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.034422 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6a15c8000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.331 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2033.
+Total: 12.728520 ms (FindLiveObjects: 0.318436 ms CreateObjectMapping: 0.077664 ms MarkObjects: 1.192577 ms  DeleteObjects: 11.139065 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029053 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6c1478000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.278 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2036.
+Total: 13.146198 ms (FindLiveObjects: 0.245650 ms CreateObjectMapping: 0.047308 ms MarkObjects: 1.161266 ms  DeleteObjects: 11.690577 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029956 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6d15c0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.256 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2039.
+Total: 14.293544 ms (FindLiveObjects: 0.287104 ms CreateObjectMapping: 0.098182 ms MarkObjects: 2.022800 ms  DeleteObjects: 11.884275 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028333 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6814d0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.253 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2042.
+Total: 13.075210 ms (FindLiveObjects: 0.265416 ms CreateObjectMapping: 0.052291 ms MarkObjects: 1.194512 ms  DeleteObjects: 11.562382 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030213 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6d1598000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.327 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.76 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2045.
+Total: 13.478364 ms (FindLiveObjects: 0.273664 ms CreateObjectMapping: 0.051878 ms MarkObjects: 1.213328 ms  DeleteObjects: 11.938818 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029512 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6b1ba0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.294 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.76 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2048.
+Total: 13.716953 ms (FindLiveObjects: 0.278796 ms CreateObjectMapping: 0.095422 ms MarkObjects: 1.945585 ms  DeleteObjects: 11.395852 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028281 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe661528000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.234 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.76 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2051.
+Total: 12.891736 ms (FindLiveObjects: 0.285077 ms CreateObjectMapping: 0.049611 ms MarkObjects: 1.181060 ms  DeleteObjects: 11.375333 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030275 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe691528000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.361 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.76 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2054.
+Total: 13.070200 ms (FindLiveObjects: 0.208074 ms CreateObjectMapping: 0.062412 ms MarkObjects: 1.256211 ms  DeleteObjects: 11.542744 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028955 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6a1588000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.255 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.76 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2057.
+Total: 13.944211 ms (FindLiveObjects: 0.267571 ms CreateObjectMapping: 0.050140 ms MarkObjects: 1.213782 ms  DeleteObjects: 12.412052 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028989 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6a1440000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.274 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.76 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2060.
+Total: 13.176660 ms (FindLiveObjects: 0.271613 ms CreateObjectMapping: 0.100393 ms MarkObjects: 1.904682 ms  DeleteObjects: 10.898767 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029098 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6e0828000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.417 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.76 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2063.
+Total: 14.699645 ms (FindLiveObjects: 0.300494 ms CreateObjectMapping: 0.104381 ms MarkObjects: 1.691189 ms  DeleteObjects: 12.602385 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030988 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6a14b8000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.245 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.76 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2066.
+Total: 13.963565 ms (FindLiveObjects: 0.290693 ms CreateObjectMapping: 0.114657 ms MarkObjects: 1.991325 ms  DeleteObjects: 11.565662 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9186.728470 seconds.
+  path: Assets/Plugins/AWSSDK
+  artifactKey: Guid(f3b2f2f9baf0048ea8501c9ab730a8bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/AWSSDK using Guid(f3b2f2f9baf0048ea8501c9ab730a8bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '687874828dc7b49dde826891f33206cd') in 0.003947 seconds
+  Import took 0.005783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.099018 seconds.
+  path: Assets/Plugins/AWSSDK/AWS_Test
+  artifactKey: Guid(3512ce0faea6a425fae672c806fb9274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/AWSSDK/AWS_Test using Guid(3512ce0faea6a425fae672c806fb9274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32faa74cdecd59ca7ae15a370b08c131') in 0.000804 seconds
+  Import took 0.002617 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028677 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe680018000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.284 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.77 GB.
+System memory in use after: 0.76 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2069.
+Total: 13.498325 ms (FindLiveObjects: 0.322568 ms CreateObjectMapping: 0.116569 ms MarkObjects: 1.428352 ms  DeleteObjects: 11.629769 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028965 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6d15a0000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Unloading broken assembly Assets/Plugins/AWSSDK/AWSSDK.SecurityToken.dll, this assembly can cause crashes in the runtime
+
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.308 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1704 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.78 GB.
+System memory in use after: 0.77 GB.
+
+Unloading 369 unused Assets to reduce memory usage. Loaded Objects now: 2072.
+Total: 13.663718 ms (FindLiveObjects: 0.275383 ms CreateObjectMapping: 0.094739 ms MarkObjects: 1.969129 ms  DeleteObjects: 11.323256 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 124.248254 seconds.
+  path: Assets/Plugins/AWSSDK/AWSSDK.CodeCommit.dll
+  artifactKey: Guid(95df757b8274b4fbca5f80717073661d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/AWSSDK/AWSSDK.CodeCommit.dll using Guid(95df757b8274b4fbca5f80717073661d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '236156ca3722e5f83ef27501d36e5bcd') in 0.697407 seconds
+  Import took 0.699855 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029290 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe651540000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Error: Could not load signature of Amazon.CognitoIdentity.CognitoAWSCredentials:.ctor due to: Could not load file or assembly 'AWSSDK.SecurityToken, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604' or one of its dependencies. assembly:AWSSDK.SecurityToken, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604 type:<unknown type> member:(null) signature:<none>
+
+Unloading broken assembly Assets/Plugins/AWSSDK/AWSSDK.CognitoIdentity.dll, this assembly can cause crashes in the runtime
+
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.304 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1703 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.78 GB.
+System memory in use after: 0.77 GB.
+
+Unloading 368 unused Assets to reduce memory usage. Loaded Objects now: 2075.
+Total: 13.866126 ms (FindLiveObjects: 0.311104 ms CreateObjectMapping: 0.092879 ms MarkObjects: 2.012208 ms  DeleteObjects: 11.448562 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029602 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe691540000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Error: Could not load signature of Com.Gamelift.Rt.Proto.CoreCommandsReflection:get_Descriptor due to: Could not load file or assembly 'Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604' or one of its dependencies. assembly:Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604 type:<unknown type> member:(null) signature:<none>
+
+Error: Could not load signature of Amazon.CognitoIdentity.CognitoAWSCredentials:.ctor due to: Could not load file or assembly 'AWSSDK.SecurityToken, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604' or one of its dependencies. assembly:AWSSDK.SecurityToken, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604 type:<unknown type> member:(null) signature:<none>
+
+Unloading broken assembly Assets/Plugins/AWSSDK/GameLiftRealtimeClientSdkNet45.dll, this assembly can cause crashes in the runtime
+
+Unloading broken assembly Assets/Plugins/AWSSDK/AWSSDK.CognitoIdentity.dll, this assembly can cause crashes in the runtime
+
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.328 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1700 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.78 GB.
+System memory in use after: 0.76 GB.
+
+Unloading 365 unused Assets to reduce memory usage. Loaded Objects now: 2078.
+Total: 13.456132 ms (FindLiveObjects: 0.274781 ms CreateObjectMapping: 0.096690 ms MarkObjects: 1.961432 ms  DeleteObjects: 11.122188 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029393 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe661530000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Error: Could not load signature of Com.Gamelift.Rt.Proto.CoreCommandsReflection:get_Descriptor due to: Could not load file or assembly 'Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604' or one of its dependencies. assembly:Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604 type:<unknown type> member:(null) signature:<none>
+
+Error: Could not load signature of Amazon.CognitoIdentity.CognitoAWSCredentials:.ctor due to: Could not load file or assembly 'AWSSDK.SecurityToken, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604' or one of its dependencies. assembly:AWSSDK.SecurityToken, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604 type:<unknown type> member:(null) signature:<none>
+
+Unloading broken assembly Assets/Plugins/AWSSDK/GameLiftRealtimeClientSdkNet45.dll, this assembly can cause crashes in the runtime
+
+Unloading broken assembly Assets/Plugins/AWSSDK/AWSSDK.CognitoIdentity.dll, this assembly can cause crashes in the runtime
+
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.265 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1700 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.78 GB.
+System memory in use after: 0.76 GB.
+
+Unloading 365 unused Assets to reduce memory usage. Loaded Objects now: 2081.
+Total: 13.637569 ms (FindLiveObjects: 0.267244 ms CreateObjectMapping: 0.065043 ms MarkObjects: 1.441530 ms  DeleteObjects: 11.845829 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029977 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6c1590000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Error: Could not load signature of Com.Gamelift.Rt.Proto.CoreCommandsReflection:get_Descriptor due to: Could not load file or assembly 'Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604' or one of its dependencies. assembly:Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604 type:<unknown type> member:(null) signature:<none>
+
+Error: Could not load signature of Amazon.CognitoIdentity.CognitoAWSCredentials:.ctor due to: Could not load file or assembly 'AWSSDK.SecurityToken, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604' or one of its dependencies. assembly:AWSSDK.SecurityToken, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604 type:<unknown type> member:(null) signature:<none>
+
+Unloading broken assembly Assets/Plugins/AWSSDK/GameLiftRealtimeClientSdkNet45.dll, this assembly can cause crashes in the runtime
+
+Unloading broken assembly Assets/Plugins/AWSSDK/AWSSDK.CognitoIdentity.dll, this assembly can cause crashes in the runtime
+
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.204 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1700 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.78 GB.
+System memory in use after: 0.76 GB.
+
+Unloading 365 unused Assets to reduce memory usage. Loaded Objects now: 2084.
+Total: 13.247171 ms (FindLiveObjects: 0.271769 ms CreateObjectMapping: 0.095253 ms MarkObjects: 1.944001 ms  DeleteObjects: 10.935006 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 299.400610 seconds.
+  path: Assets/MyAssets/Scripts/PlayUIController.cs
+  artifactKey: Guid(516c796d834324eebb186fe4e0b9c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scripts/PlayUIController.cs using Guid(516c796d834324eebb186fe4e0b9c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04eb1ec174555c1fc27b7bed9d88a454') in 0.004345 seconds
+  Import took 0.006111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004140 seconds.
+  path: Assets/MyAssets/Scripts/PlayUIController.cs
+  artifactKey: Guid(516c796d834324eebb186fe4e0b9c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scripts/PlayUIController.cs using Guid(516c796d834324eebb186fe4e0b9c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04eb1ec174555c1fc27b7bed9d88a454') in 0.002220 seconds
+  Import took 0.003576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.880723 seconds.
+  path: Assets/Plugins/AWSSDK/AWSSDK.Core.pdb
+  artifactKey: Guid(720c06c61ff19494c80a83a4f4242fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/AWSSDK/AWSSDK.Core.pdb using Guid(720c06c61ff19494c80a83a4f4242fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945a63013c8863566ab91012c038fa2e') in 0.209492 seconds
+  Import took 0.212131 seconds .
+>>>>>>> 7ceb36e447cfa2f2306e5541bb46aa5f91a7ec6c
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+<<<<<<< HEAD
+Registered in 0.049370 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7f89ba76b000 doesn't match image /Users/a50621/workspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 2.05 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.693 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.76 GB.
+System memory in use after: 0.75 GB.
+
+Unloading 370 unused Assets to reduce memory usage. Loaded Objects now: 1897.
+Total: 14.487241 ms (FindLiveObjects: 0.374868 ms CreateObjectMapping: 0.101015 ms MarkObjects: 1.976329 ms  DeleteObjects: 12.033617 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 161.438234 seconds.
+  path: Assets/MyAssets/Scripts/MainMenuUIController.cs
+  artifactKey: Guid(01ed7c026883e49b3aed9652cb834b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scripts/MainMenuUIController.cs using Guid(01ed7c026883e49b3aed9652cb834b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7962e026c8bf20ab16afb73c30433765') in 0.032616 seconds
+  Import took 0.086898 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.134251 seconds.
+  path: Assets/MyAssets/Scripts/MainMenuUIController.cs
+  artifactKey: Guid(01ed7c026883e49b3aed9652cb834b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scripts/MainMenuUIController.cs using Guid(01ed7c026883e49b3aed9652cb834b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7962e026c8bf20ab16afb73c30433765') in 0.003366 seconds
+  Import took 0.005630 seconds .
+
+=======
+Registered in 0.029959 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe681558000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.245 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.78 GB.
+System memory in use after: 0.77 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2087.
+Total: 13.394884 ms (FindLiveObjects: 0.279245 ms CreateObjectMapping: 0.099673 ms MarkObjects: 1.951793 ms  DeleteObjects: 11.062974 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.057613 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7fe6d1578000 doesn't match image /Users/a403/UnityWorkspace/AWS_Project/Assets/Plugins/AWSSDK/AWSSDK.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.466 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1699 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 0.78 GB.
+System memory in use after: 0.77 GB.
+
+Unloading 364 unused Assets to reduce memory usage. Loaded Objects now: 2090.
+Total: 14.021819 ms (FindLiveObjects: 0.294385 ms CreateObjectMapping: 0.097401 ms MarkObjects: 2.003528 ms  DeleteObjects: 11.625348 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+>>>>>>> 7ceb36e447cfa2f2306e5541bb46aa5f91a7ec6c
