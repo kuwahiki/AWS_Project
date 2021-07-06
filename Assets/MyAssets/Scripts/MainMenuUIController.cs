@@ -16,22 +16,6 @@ public class MainMenuUIController : MonoBehaviour
 {
     GameObject[] menu_elem;
     GameObject Canvas;
-
-    class GameLiftConfig
-    {
-        public RegionEndpoint RegionEndPoint { get; set; }
-        public string AccessKeyId { get; set; }
-        public string SecretAccessKey { get; set; }
-        public string GameLiftAliasId { get; set; }
-    }
-
-    GameLiftConfig config = new GameLiftConfig
-    {
-        RegionEndPoint = RegionEndpoint.USEast1,
-        AccessKeyId = "AKIAX5IKZ7C5WR7YBJ5W",
-        SecretAccessKey = "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",
-        GameLiftAliasId = "alias-69cf940b-7d2a-4cad-a2c0-6e21792217f5"
-    };
     AmazonGameLiftClient gameLiftClient;
     // Start is called before the first frame update
     void Start()
@@ -39,7 +23,7 @@ public class MainMenuUIController : MonoBehaviour
         Canvas = GameObject.Find("Canvas");
         GameObject menu_base = GameObject.Find("menu_base");
         menu_elem = new GameObject[menu_base.transform.childCount];
-        gameLiftClient = new AmazonGameLiftClient(config.AccessKeyId, config.SecretAccessKey, config.RegionEndPoint);
+        gameLiftClient = new AmazonGameLiftClient(GameLiftConfig.AccessKeyId, GameLiftConfig.SecretAccessKey, GameLiftConfig.RegionEndPoint);
         for (int i = 0;i < menu_elem.Length;i++)
         {
             menu_elem[i] = menu_base.transform.GetChild(i).gameObject;
@@ -52,15 +36,19 @@ public class MainMenuUIController : MonoBehaviour
             {
                 case 0:
                     entry.callback.AddListener((BaseEventData eventData) => {
+                        GameObject SearchUI = (GameObject)Resources.Load("SearchRoom");
+                        Instantiate(SearchUI, Canvas.transform);
                         var rooms = SearchRooms();
                         foreach(GameSession session in rooms)
                         {
                             UnityEngine.Debug.Log(session.Name);
-                            DeleteGameSessionQueueRequest deleteGame = new DeleteGameSessionQueueRequest{
-                                 Name = session.GameSessionId
-                            };
-                            gameLiftClient.DeleteGameSessionQueue(deleteGame);
+                            //DeleteGameSessionQueueRequest deleteGame = new DeleteGameSessionQueueRequest
+                            //{
+                            //    Name = session.Name
+                            //};
+                            //gameLiftClient.DeleteGameSessionQueue(deleteGame);
                         }
+
                     });
                     break;
                 case 1:
@@ -100,7 +88,7 @@ public class MainMenuUIController : MonoBehaviour
         UnityEngine.Debug.Log("SearchRooms");
         var response = gameLiftClient.SearchGameSessions(new SearchGameSessionsRequest
         {
-            AliasId = config.GameLiftAliasId,
+            AliasId = GameLiftConfig.GameLiftAliasId,
         });
         return response.GameSessions;
     }

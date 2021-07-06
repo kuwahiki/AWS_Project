@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{545C0A3C-7EDF-29E0-D43B-59D927CB6951}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/MainMenuUIController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/SearchUIController.cs">
     <Files>
-      <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" Line="62" Column="66" />
+      <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" Line="49" Column="1" />
       <File FileName="Assets/MyAssets/Scripts/PlayUIController.cs" Line="96" Column="77" />
       <File FileName="Assets/MyAssets/Scripts/charController.cs" Line="113" Column="1" />
       <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" />
@@ -14,13 +14,30 @@
       <File FileName="Assets/MyAssets/Scripts/DynamoTest.cs" />
       <File FileName="Assets/MyAssets/Scripts/AmazonDynamoDBAttributes.cs" />
       <File FileName="Assets/MyAssets/Scripts/RealTimeClient.cs" />
-      <File FileName="Assets/MyAssets/Scripts/PlayerMoveMes.cs" />
-      <File FileName="Assets/MyAssets/Scripts/CreateUIController.cs" Line="25" Column="44" />
+      <File FileName="Assets/MyAssets/Scripts/PlayerMoveMes.cs" Line="1" Column="1" />
+      <File FileName="Assets/MyAssets/Scripts/CreateUIController.cs" Line="32" Column="1" />
+      <File FileName="Assets/MyAssets/Scripts/GameLiftConfig.cs" Line="13" Column="63" />
+      <File FileName="Assets/MyAssets/Scripts/SearchUIController.cs" Line="7" Column="15" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AWS_Project" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="MyAssets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="SearchUIController.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1a81eaea-8bc2-4b68-9b5a-a1e3a6e0f565" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="60271f86-1582-497d-b6b5-2648f1a2c7bd" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

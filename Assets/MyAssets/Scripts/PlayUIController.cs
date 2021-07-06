@@ -100,7 +100,7 @@ public class PlayUIController : MonoBehaviour
     void SendChat(string chat)
     {
         //チャット内容をDynamoDBに送信する処理（AWS側の処理）
-        PutItem(Client, chat);
+        PutItem(Client, chat,PlayerPrefs.GetString("TableName"));
         //CreateTable(Client, "test");
         count++;
 
@@ -153,20 +153,19 @@ public class PlayUIController : MonoBehaviour
         var result = client.CreateTableAsync(request).Result;
     }
 
-    private void PutItem(IAmazonDynamoDB client, string chatText)
+    private void PutItem(IAmazonDynamoDB client, string chatText,string Table)
     {
         getItemChat();
         //リクエストの構築
-        count++;
         DateTime dt = DateTime.Now;
         string nowtime = dt.Year.ToString() + dt.Month.ToString() + dt.Day.ToString() + dt.Hour.ToString() + dt.Minute.ToString() + dt.Second.ToString() + dt.Millisecond.ToString();
         PutItemRequest request = new PutItemRequest
         {
-            TableName = "UnityChat",//追加先のテーブル名
+            TableName = Table,//追加先のテーブル名
                                     //各カラムの値を指定
             Item = new Dictionary<string, AttributeValue>
                 {
-                    {"ID",new AttributeValue{N = count.ToString()} },
+                    {"Id",new AttributeValue{N = count + 1.ToString()} },
                     {"Date",new AttributeValue{N = nowtime} },
                     {"Text",new AttributeValue{S = chatText } },
                     {"UserName",new AttributeValue{S = "TestUser" } }
@@ -194,18 +193,19 @@ public class PlayUIController : MonoBehaviour
 
     private async Task getItemChat()
     {
-        GetItemRequest request = new GetItemRequest
-        {
-            Key = new Dictionary<string, AttributeValue>()
-            {
-                { "UserName", new AttributeValue {S = "TestUser"} }
-            },
-            TableName = "UnityChat",                            
-        };
+        //GetItemRequest request = new GetItemRequest
+        //{
+        //    Key = new Dictionary<string, AttributeValue>()
+        //    {
+        //        { "UserName", new AttributeValue {S = "TestUser"} }
+        //    },
+        //    TableName = "UnityChat",                            
+        //};
 
         try {
             //var res1 = await Client.GetItemAsync(request);
-            var req = new ScanRequest("UnityChat");
+            string TableName = PlayerPrefs.GetString("TableName");
+            var req = new ScanRequest(TableName);
             var res = await Client.ScanAsync(req);
             Text  text= GameObject.Find("Canvas/Panel/Text").GetComponent<Text>();
             var items = res.Items;
@@ -218,18 +218,22 @@ public class PlayUIController : MonoBehaviour
                 i++;
                 
             }
-            int set = 1;
+            int set =  0;
             Debug.Log(i);
             if(i >= 14)
             {
                 set = i - 12;
+            }
+            if(i == 0)
+            {
+                set = 0;
             }
             for(int j = set; j  <= i; j++)
             {
                 text.text +=  chatdate[j.ToString()];
             }
             count = i;
-            Debug.Log(count);
+            Debug.Log(count+ "\n" + set);
             //PrintChat(text,res.Items); 
         }
         catch(Exception ex)
@@ -246,10 +250,11 @@ public class PlayUIController : MonoBehaviour
         foreach (KeyValuePair<string,AttributeValue> kvp in attributeList)
         {
             string attributeName = kvp.Key;
+            Debug.Log(kvp.Key);
             AttributeValue Value = kvp.Value;
 
             switch(attributeName){
-                case "ID":
+                case "Id":
                     ID = Value.N;
                     break;
                 case "Text":
