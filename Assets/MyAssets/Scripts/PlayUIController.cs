@@ -102,7 +102,6 @@ public class PlayUIController : MonoBehaviour
         //チャット内容をDynamoDBに送信する処理（AWS側の処理）
         PutItem(Client, chat,PlayerPrefs.GetString("TableName"));
         //CreateTable(Client, "test");
-        count++;
 
     }
 
@@ -157,6 +156,7 @@ public class PlayUIController : MonoBehaviour
     {
         getItemChat();
         //リクエストの構築
+        count++;
         DateTime dt = DateTime.Now;
         string nowtime = dt.Year.ToString() + dt.Month.ToString() + dt.Day.ToString() + dt.Hour.ToString() + dt.Minute.ToString() + dt.Second.ToString() + dt.Millisecond.ToString();
         PutItemRequest request = new PutItemRequest
@@ -165,7 +165,7 @@ public class PlayUIController : MonoBehaviour
                                     //各カラムの値を指定
             Item = new Dictionary<string, AttributeValue>
                 {
-                    {"Id",new AttributeValue{N = count + 1.ToString()} },
+                    {"Id",new AttributeValue{N = count.ToString()} },
                     {"Date",new AttributeValue{N = nowtime} },
                     {"Text",new AttributeValue{S = chatText } },
                     {"UserName",new AttributeValue{S = "TestUser" } }
@@ -211,25 +211,22 @@ public class PlayUIController : MonoBehaviour
             var items = res.Items;
             int i = 0;
             text.text = null;
-            var chatdate = new SortedDictionary<string, string>();
+            var chatdate = new Dictionary<string, string>();
             foreach(IDictionary<string, AttributeValue> item in items)
             {
                 setChat(item,chatdate);
                 i++;
                 
             }
-            int set =  0;
+            int set =  1;
             Debug.Log(i);
             if(i >= 14)
             {
                 set = i - 12;
             }
-            if(i == 0)
-            {
-                set = 0;
-            }
             for(int j = set; j  <= i; j++)
             {
+                Debug.Log(j);
                 text.text +=  chatdate[j.ToString()];
             }
             count = i;
@@ -244,7 +241,7 @@ public class PlayUIController : MonoBehaviour
     }
 
 
-    private void setChat(IDictionary<string, AttributeValue> attributeList, SortedDictionary<string, string> data)
+    private void setChat(IDictionary<string, AttributeValue> attributeList, Dictionary<string, string> data)
     {
         string Username = "", chat = "", ID = "";
         foreach (KeyValuePair<string,AttributeValue> kvp in attributeList)
@@ -271,6 +268,7 @@ public class PlayUIController : MonoBehaviour
                 string str = Username + ":" + chat + "\n";
                 chat = "";
                 Username = chat;
+                Debug.Log(ID + ":" + str);
                 data.Add(ID, str);
             }
         }

@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{545C0A3C-7EDF-29E0-D43B-59D927CB6951}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/SearchUIController.cs">
     <Files>
-      <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" Line="49" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/PlayUIController.cs" Line="96" Column="77" />
+      <File FileName="Assets/MyAssets/Scripts/PlayUIController.cs" Line="194" Column="37" />
+      <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" Line="63" Column="63" />
       <File FileName="Assets/MyAssets/Scripts/charController.cs" Line="113" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" />
-      <File FileName="Assets/MyAssets/Scripts/PlayMenuController.cs" />
+      <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" Line="71" Column="57" />
+      <File FileName="Assets/MyAssets/Scripts/PlayMenuController.cs" Line="1" Column="1" />
       <File FileName="Assets/MyAssets/Scripts/TitleUIController.cs" />
       <File FileName="Assets/MyAssets/Scripts/AWSCognitoIDs.cs" />
       <File FileName="Assets/MyAssets/Scripts/Signin.cs" />
@@ -14,30 +14,15 @@
       <File FileName="Assets/MyAssets/Scripts/DynamoTest.cs" />
       <File FileName="Assets/MyAssets/Scripts/AmazonDynamoDBAttributes.cs" />
       <File FileName="Assets/MyAssets/Scripts/RealTimeClient.cs" />
-      <File FileName="Assets/MyAssets/Scripts/PlayerMoveMes.cs" Line="1" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/CreateUIController.cs" Line="32" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/GameLiftConfig.cs" Line="13" Column="63" />
-      <File FileName="Assets/MyAssets/Scripts/SearchUIController.cs" Line="7" Column="15" />
+      <File FileName="Assets/MyAssets/Scripts/PlayerMoveMes.cs" />
+      <File FileName="Assets/MyAssets/Scripts/CreateUIController.cs" Line="15" Column="19" />
+      <File FileName="Assets/MyAssets/Scripts/GameLiftConfig.cs" Line="10" Column="80" />
+      <File FileName="Assets/MyAssets/Scripts/SearchUIController.cs" Line="61" Column="66" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="AWS_Project" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="MyAssets" expanded="True">
-                <Node name="Scripts" expanded="True">
-                  <Node name="SearchUIController.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="60271f86-1582-497d-b6b5-2648f1a2c7bd" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="aefd2b1b-021e-4635-9a08-e465a48696a9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

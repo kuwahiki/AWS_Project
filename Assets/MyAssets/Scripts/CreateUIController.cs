@@ -19,6 +19,7 @@ public class CreateUIController : MonoBehaviour
     AmazonGameLiftClient gameLiftClient;
     CognitoAWSCredentials Credentials;
     AmazonDynamoDBClient Client;
+    CanvasGroup group;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,12 +52,31 @@ public class CreateUIController : MonoBehaviour
 
             Destroy(this.gameObject);
         });
+
+        this.group = this.GetComponent<CanvasGroup>();
+        group.alpha = 0.01f;
+        group.DOFade(1.0f, 1.0f);
+
+        Image back = this.transform.Find("Back").gameObject.GetComponent<Image>();
+        EventTrigger trigger = back.GetComponent<EventTrigger>();
+        EventTrigger.Entry entry = new EventTrigger.Entry();
+        // なんのイベントを検出するか
+        entry.eventID = EventTriggerType.PointerClick;
+        // コールバック登録
+        entry.callback.AddListener((BaseEventData arg0) => {
+            group.DOFade(0.0f, 1.0f);
+        });
+        // EventTriggerに追加
+        trigger.triggers.Add(entry);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(group.alpha <= 0.0f)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     // ルームの作成
