@@ -1,5 +1,6 @@
 using System;
 using System.Text;
+using UnityEngine;
 using Aws.GameLift.Realtime;
 using Aws.GameLift.Realtime.Event;
 using Aws.GameLift.Realtime.Types;
@@ -20,6 +21,12 @@ public class RealTimeClient
         public const int Moveback = 5;
         public const int Login = 6;
         public const int Logout = 7;
+        public const int Change_Floor1 = 8;
+        public const int Change_Floor2 = 9;
+        public const int Change_Floor3 = 10;
+        public const int Change_Wall1 = 11;
+        public const int Change_Wall2 = 12;
+        public const int Change_Wall3 = 13;
         public const int RecieveTest1 = 31;
         public const int RecieveTest2 = 32;
 
@@ -82,32 +89,66 @@ public class RealTimeClient
     /// <param name="payload">Custom payload to send with message</param>
     public void SendMessage(DeliveryIntent intent, string payload,string action)
     {
+        int Mes = 0;
         switch (action)
         {
             case PlayerMoveMes.MoveFront:
+                Mes = OpCode.MoveFront;
                 break;
             case PlayerMoveMes.MoveBack:
+                Mes = OpCode.Moveback;
                 break;
             case PlayerMoveMes.MoveLeft:
+                Mes = OpCode.Moveleft;
                 break;
             case PlayerMoveMes.MoveRight:
+                Mes = OpCode.Moveright;
                 break;
             case PlayerMoveMes.SentChat:
+                Mes = OpCode.ChatSent;
                 break;
             case PlayerMoveMes.Login:
+                Mes = OpCode.Login;
                 UnityEngine.Debug.Log("Login");
                 break;
             case PlayerMoveMes.Logout:
+                Mes = OpCode.Logout;
                 UnityEngine.Debug.Log("Logout");
+                break;
+            case PlayerMoveMes.Change_Floor1:
+                Mes = OpCode.Change_Floor1;
+                break;
+            case PlayerMoveMes.Change_Floor2:
+                Mes = OpCode.Change_Floor2;
+                break;
+            case PlayerMoveMes.Change_Floor3:
+                Mes = OpCode.Change_Floor3;
+                break;
+            case PlayerMoveMes.Change_Wall1:
+                Mes = OpCode.Change_Wall1;
+                break;
+            case PlayerMoveMes.Change_Wall2:
+                Mes = OpCode.Change_Wall2;
+                break;
+            case PlayerMoveMes.Change_Wall3:
+                Mes = OpCode.Change_Wall3;
                 break;
             default:
                 break;
         }
-        UnityEngine.Debug.Log("SendMessage");
-        Client.SendMessage(Client.NewMessage(OpCode.SendTest1)
-            .WithDeliveryIntent(intent)
-            .WithTargetPlayer(Constants.PLAYER_ID_SERVER)
-            .WithPayload(StringToBytes(payload)));
+        if (Mes != 0) {
+            //UnityEngine.Debug.Log("SendMessage");
+            try {
+                Client.SendMessage(Client.NewMessage(Mes)
+                    .WithDeliveryIntent(intent)
+                    .WithTargetPlayer(Constants.PLAYER_ID_SERVER)
+                    .WithPayload(StringToBytes(payload)));
+            }catch(Exception ex)
+            {
+                Debug.LogError(ex);
+            }
+            
+        }
     }
 
     /**
@@ -169,7 +210,7 @@ public class RealTimeClient
 
     public void SendEvent(int opCode)
     {
-        UnityEngine.Debug.Log("SendEvent");
+        //UnityEngine.Debug.Log("SendEvent");
         if (!IsConnected()) return;
         Client.SendEvent(opCode);
     }

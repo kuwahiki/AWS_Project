@@ -8,6 +8,8 @@ using System.Net.NetworkInformation;
 using Amazon;
 using Amazon.GameLift;
 using Amazon.GameLift.Model;
+using Aws.GameLift.Realtime.Types;
+using Aws.GameLift.Realtime;
 
 public class charController : MonoBehaviour
 {
@@ -35,7 +37,8 @@ public class charController : MonoBehaviour
         SecretAccessKey = "FcnJzF20eEP9+OD8890KajKaufxZME30f0tqgHmy",
         GameLiftAliasId = "alias-e8833599-f4ae-4d6d-98db-37dbed92b017"
     };
-    AmazonGameLiftClient gameLiftClient;  
+    AmazonGameLiftClient gameLiftClient;
+    RealTimeClient realTimeClient;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +53,7 @@ public class charController : MonoBehaviour
         sex = PlayerPrefs.GetString("sex");
 
         gameLiftClient = new AmazonGameLiftClient(config.AccessKeyId,config.SecretAccessKey,config.RegionEndPoint);
+        realTimeClient = GameObject.Find("RealTimeClient").GetComponent<Configobjcontroller>().realTimeClient;
     }
 
     // Update is called once per frame
@@ -67,6 +71,8 @@ public class charController : MonoBehaviour
                 //カメラから前方に動く
                 rigidbody.AddForce(foword);
                 animationInt = walk;
+                realTimeClient.SendMessage(DeliveryIntent.Reliable, "test",PlayerMoveMes.MoveFront);
+                
             }
             if (Input.GetKey(KeyCode.A))
             {
@@ -74,6 +80,7 @@ public class charController : MonoBehaviour
                 Vector3 left = new Vector3(-foword.z, 0, foword.x);
                 rigidbody.AddForce(left);
                 animationInt = walk;
+                realTimeClient.SendEvent(RealTimeClient.OpCode.Moveleft);
             }
             if (Input.GetKey(KeyCode.D))
             {
@@ -81,6 +88,7 @@ public class charController : MonoBehaviour
                 Vector3 right = new Vector3(foword.z, 0, -foword.x);
                 rigidbody.AddForce(right);
                 animationInt = walk;
+                realTimeClient.SendEvent(RealTimeClient.OpCode.Moveright);
             }
             if (Input.GetKey(KeyCode.S))
             {
@@ -88,6 +96,7 @@ public class charController : MonoBehaviour
                 Vector3 back = -foword;
                 rigidbody.AddForce(back);
                 animationInt = walk;
+                realTimeClient.SendEvent(RealTimeClient.OpCode.Moveback);
             }
         }
         animator.SetInteger("animation",animationInt);
@@ -132,6 +141,12 @@ public class charController : MonoBehaviour
                 break;
 
         }
+    }
+
+    public void OnDataReceivedCallback(object sender, Aws.GameLift.Realtime.Event.DataReceivedEventArgs e)
+    {
+        
+            UnityEngine.Debug.Log( $"{e.OpCode}");
     }
 }
 

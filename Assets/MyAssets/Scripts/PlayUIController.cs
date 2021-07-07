@@ -159,6 +159,11 @@ public class PlayUIController : MonoBehaviour
         count++;
         DateTime dt = DateTime.Now;
         string nowtime = dt.Year.ToString() + dt.Month.ToString() + dt.Day.ToString() + dt.Hour.ToString() + dt.Minute.ToString() + dt.Second.ToString() + dt.Millisecond.ToString();
+        string username = PlayerPrefs.GetString("Username");
+        if(username == "" || username == null)
+        {
+            username = "GuestUser";
+        }
         PutItemRequest request = new PutItemRequest
         {
             TableName = Table,//追加先のテーブル名
@@ -168,7 +173,7 @@ public class PlayUIController : MonoBehaviour
                     {"Id",new AttributeValue{N = count.ToString()} },
                     {"Date",new AttributeValue{N = nowtime} },
                     {"Text",new AttributeValue{S = chatText } },
-                    {"UserName",new AttributeValue{S = "TestUser" } }
+                    {"UserName",new AttributeValue{S = username } }
                 }
         };
         //テーブルに追加

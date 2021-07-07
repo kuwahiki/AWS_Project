@@ -121,7 +121,7 @@ public class SearchUIController : MonoBehaviour
         var playerSession = response.PlayerSession;
         ushort DefaultUdpPort = 7777;
         var udpPort = SearchAvailableUdpPort(DefaultUdpPort, DefaultUdpPort + 100);
-        realTimeClient = new RealTimeClient(
+        GameObject.Find("RealTimeClient").GetComponent<Configobjcontroller>().realTimeClient = new RealTimeClient(
             playerSession.IpAddress,
             playerSession.Port,
             udpPort,
@@ -129,7 +129,7 @@ public class SearchUIController : MonoBehaviour
             playerSession.PlayerSessionId,
             null);
 
-        realTimeClient.OnDataReceivedCallback = OnDataReceivedCallback;
+        GameObject.Find("RealTimeClient").GetComponent<Configobjcontroller>().realTimeClient.OnDataReceivedCallback = OnDataReceivedCallback;
     }
 
     public void OnDataReceivedCallback(object sender, Aws.GameLift.Realtime.Event.DataReceivedEventArgs e)

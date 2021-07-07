@@ -28,7 +28,12 @@ public class SettingUIController : MonoBehaviour
             switch (i)
             {
                 case 0:
-                    buttons[i].onClick.AddListener(() => { ChangeName(); });
+                    buttons[i].onClick.AddListener(() => {
+                        InputField text = parent.transform.Find("UIBase/User_Input").GetComponent<InputField>();
+                        ChangeName(text.text);
+                        text.text = null;
+                        text = null;
+                    });
                     break;
                 case 1:
                     //操作方法クリックされた際の処理
@@ -87,9 +92,11 @@ public class SettingUIController : MonoBehaviour
         eventTrigger.triggers.Add(entry);
     }
 
-    private void ChangeName()
+    private void ChangeName(string name)
     {
         //ユーザーのなまえの変更（AWS側の処理）
+        PlayerPrefs.SetString("Username",name);
+        Debug.Log(PlayerPrefs.GetString("Username"));
     }
 
     void Clicked_Man(GameObject UIbase)
