@@ -28,11 +28,14 @@ public class RealTimeClient
         public const int Change_Wall1 = 11;
         public const int Change_Wall2 = 12;
         public const int Change_Wall3 = 13;
+        public const int Change_Sex_Man = 14;
+        public const int Change_Sex_Woman = 15;
         public const int RecieveTest1 = 31;
         public const int RecieveTest2 = 32;
+        public const int JoinAnotherPlayer = 113;
 
     }
-
+    Vector3 startPos = Vector3.zero;
     /// Initialize a client for GameLift Realtime and connect to a player session.
     /// <param name="endpoint">The DNS name that is assigned to Realtime server</param>
     /// <param name="remoteTcpPort">A TCP port for the Realtime server</param>
@@ -134,19 +137,27 @@ public class RealTimeClient
             case PlayerMoveMes.Change_Wall3:
                 Mes = OpCode.Change_Wall3;
                 break;
+            case PlayerMoveMes.Change_Sex_Man:
+                Mes = OpCode.Change_Sex_Man;
+                break;
+            case PlayerMoveMes.Change_Sex_Woman:
+                Mes = OpCode.Change_Sex_Woman;
+                break;
             default:
                 break;
         }
         if (Mes != 0) {
             //UnityEngine.Debug.Log("SendMessage");
             try {
-                RTMessage message = Client.NewMessage(Mes);
-                Client.SendMessage(message);
-                //Client.SendMessage(Client.NewMessage(Mes)
-                //    .WithDeliveryIntent(intent)
-                //    .WithTargetPlayer(Constants.PLAYER_ID_SERVER)
-                //    .WithPayload(StringToBytes(payload)));
-            }catch(Exception ex)
+                //RTMessage message = Client.NewMessage(Mes).WithDeliveryIntent(DeliveryIntent.Reliable);
+                // Client.SendMessage(message);
+                Debug.Log(Mes);
+                Client.SendMessage(Client.NewMessage(Mes)
+                    .WithDeliveryIntent(intent)
+                    .WithTargetPlayer(Constants.PLAYER_ID_SERVER)
+                    .WithPayload(StringToBytes(payload)));
+            }
+            catch(Exception ex)
             {
                 Debug.LogError(ex);
             }
@@ -183,14 +194,32 @@ public class RealTimeClient
      */
     public virtual void OnDataReceived(object sender, DataReceivedEventArgs e)
     {
+        int playrsenderID = PlayerPrefs.GetInt("PlayerSendID");
         UnityEngine.Debug.Log("OnDataReceived");
-        UnityEngine.Debug.Log($"OpCode = {e.OpCode}");
-        switch (e.OpCode)
-        {
-            // handle message based on OpCode
-            default:
-                break;
+        UnityEngine.Debug.Log($"OpCode = {e.OpCode},Sender = {e.Sender}");
+        if (playrsenderID != e.Sender) {
+            switch (e.OpCode)
+            {
+                // handle message based on OpCode
+                case OpCode.MoveFront:
+                    break;
+                case OpCode.Change_Sex_Man:
+                    GameObject.Find(e.Sender.ToString() + "(Clone)").transform.GetComponent<AnotherController>().ChangeSex(true);
+                    break;
+                case OpCode.Change_Sex_Woman:
+                    GameObject.Find(e.Sender.ToString() + "(Clone)").transform.GetComponent<AnotherController>().ChangeSex(false);
+                    break;
+                case OpCode.JoinAnotherPlayer:
+                    GameObject another = (GameObject)Resources.Load("Another_Player");
+                    another.name = e.Sender.ToString();
+                    Transform parent = GameObject.Find("AnotherController").GetComponent<Transform>();
+                    UnityEngine.Object.Instantiate(another,startPos,Quaternion.identity,parent);
+                    break;
+                default:
+                    break;
+            }
         }
+        
 
         if (OnDataReceivedCallback != null) OnDataReceivedCallback(sender, e);
     }

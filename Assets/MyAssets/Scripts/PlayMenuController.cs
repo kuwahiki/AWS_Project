@@ -4,15 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using DG.Tweening;
+using Aws.GameLift.Realtime.Types;
+using Aws.GameLift.Realtime;
 
 public class PlayMenuController : MonoBehaviour
 {
     GameObject menu_base, icons_parent;
     GameObject[] icons;
+    RealTimeClient realTimeClient;
     // Start is called before the first frame update
     void Start()
     {
-
+        realTimeClient = GameObject.Find("RealTimeClient").GetComponent<Configobjcontroller>().realTimeClient;
         //Menu＿baseのStart処理
         menu_base = GameObject.Find("Menu_base");
         menu_base.transform.localScale = Vector3.zero;
@@ -255,7 +258,8 @@ public class PlayMenuController : MonoBehaviour
         obj = (GameObject)Resources.Load("LogoutUI");
         Transform Canvas = GameObject.Find("Canvas").transform;
         Instantiate(obj, Canvas.position, Quaternion.identity, Canvas);
-        //ルームからの退出（AWS側）
+        realTimeClient.Disconnect();
+        Debug.Log("Leave");
     }
 
     void private_Chat()

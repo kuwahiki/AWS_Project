@@ -39,6 +39,7 @@ public class charController : MonoBehaviour
     };
     AmazonGameLiftClient gameLiftClient;
     RealTimeClient realTimeClient;
+    int playrsenderID;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +55,7 @@ public class charController : MonoBehaviour
 
         gameLiftClient = new AmazonGameLiftClient(config.AccessKeyId,config.SecretAccessKey,config.RegionEndPoint);
         realTimeClient = GameObject.Find("RealTimeClient").GetComponent<Configobjcontroller>().realTimeClient;
+        playrsenderID = PlayerPrefs.GetInt("PlayerSendID");
     }
 
     // Update is called once per frame
@@ -80,7 +82,7 @@ public class charController : MonoBehaviour
                 Vector3 left = new Vector3(-foword.z, 0, foword.x);
                 rigidbody.AddForce(left);
                 animationInt = walk;
-                realTimeClient.SendEvent(RealTimeClient.OpCode.Moveleft);
+                realTimeClient.SendMessage(DeliveryIntent.Reliable, "test", PlayerMoveMes.MoveLeft);
             }
             if (Input.GetKey(KeyCode.D))
             {
@@ -88,7 +90,7 @@ public class charController : MonoBehaviour
                 Vector3 right = new Vector3(foword.z, 0, -foword.x);
                 rigidbody.AddForce(right);
                 animationInt = walk;
-                realTimeClient.SendEvent(RealTimeClient.OpCode.Moveright);
+                realTimeClient.SendMessage(DeliveryIntent.Reliable, "test", PlayerMoveMes.MoveRight);
             }
             if (Input.GetKey(KeyCode.S))
             {
@@ -96,7 +98,7 @@ public class charController : MonoBehaviour
                 Vector3 back = -foword;
                 rigidbody.AddForce(back);
                 animationInt = walk;
-                realTimeClient.SendEvent(RealTimeClient.OpCode.Moveback);
+                realTimeClient.SendMessage(DeliveryIntent.Reliable, "test", PlayerMoveMes.MoveBack);
             }
         }
         animator.SetInteger("animation",animationInt);

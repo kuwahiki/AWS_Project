@@ -4,10 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using Aws.GameLift.Realtime.Types;
+using Aws.GameLift.Realtime;
 
 public class LogoutUIController : MonoBehaviour
 {
     GameObject parent;
+    RealTimeClient realTimeClient;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +18,7 @@ public class LogoutUIController : MonoBehaviour
         Button title = parent.transform.Find("Back_title").GetComponent<Button>();
         title.onClick.AddListener(() => {
             SceneManager.LoadScene("Title");
-            Logout();
+            //Logout();
         });
         Button Main = parent.transform.Find("Back_Menu").GetComponent<Button>();
         Main.onClick.AddListener(() => {

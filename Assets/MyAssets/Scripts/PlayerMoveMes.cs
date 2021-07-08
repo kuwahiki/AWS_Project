@@ -17,5 +17,6 @@ public class PlayerMoveMes
     public const string Change_Wall1 = "Wall1";
     public const string Change_Wall2 = "Wall2";
     public const string Change_Wall3 = "Wall3";
-
+    public const string Change_Sex_Man = "Man";
+    public const string Change_Sex_Woman = "Woman";
 }

@@ -13,10 +13,10 @@ const tickTime = 1000;
 // Defines how to long to wait in Seconds before beginning early termination check in the example tick loop
 const minimumElapsedTime = 120;
 
-var session;                        // The Realtime server session object
-var logger;                         // Log at appropriate level via .info(), .warn(), .error(), .debug()
-var startTime;                      // Records the time the process started
-var activePlayers = 0;              // Records the number of connected players
+var session; // The Realtime server session object
+var logger; // Log at appropriate level via .info(), .warn(), .error(), .debug()
+var startTime; // Records the time the process started
+var activePlayers = 0; // Records the number of connected players
 var onProcessStartedCalled = false; // Record if onProcessStarted has been called
 
 // Example custom op codes for user-defined messages
@@ -38,6 +38,9 @@ const Change_Floor3 = 10;
 const Change_Wall1 = 11;
 const Change_Wall2 = 12;
 const Change_Wall3 = 13;
+const Change_Sex_Man = 14;
+const Change_Sex_Woman = 15;
+var a;
 
 // Example groups for user-defined groups
 // Any positive group number can be defined here. These should match your client code.
@@ -97,8 +100,9 @@ function onPlayerConnect(connectMsg) {
 function onPlayerAccepted(player) {
     // This player was accepted -- let's send them a message
     const msg = session.newTextGameMessage(OP_CODE_PLAYER_ACCEPTED, player.peerId,
-                                             "Peer " + player.peerId + " accepted");
+        "Peer " + player.peerId + " accepted");
     session.sendReliableMessage(msg, player.peerId);
+    a = player.peerId;
     activePlayers++;
 }
 
@@ -108,8 +112,9 @@ function onPlayerAccepted(player) {
 function onPlayerDisconnect(peerId) {
     // send a message to each remaining player letting them know about the disconnect
     const outMessage = session.newTextGameMessage(OP_CODE_DISCONNECT_NOTIFICATION,
-                                                session.getServerId(),
-                                                "Peer " + peerId + " disconnected");
+        session.getServerId(),
+        "Peer " + peerId + " disconnected");
+    session.sendReliableMessage(outMessage, peerId);
     session.getPlayers().forEach((player, playerId) => {
         if (playerId != peerId) {
             session.sendReliableMessage(outMessage, peerId);
@@ -121,71 +126,89 @@ function onPlayerDisconnect(peerId) {
 // Handle a message to the server
 function onMessage(gameMessage) {
     logger.info("sendMessage" + gameMessage.opCode);
-    switch (gameMessage.opCode) {
-      case OP_CODE_CUSTOM_OP1: {
-        // do operation 1 with gameMessage.payload for example sendToGroup
-        const outMessage = session.newTextGameMessage(OP_CODE_CUSTOM_OP1_REPLY, session.getServerId(), gameMessage.payload);
-        session.sendGroupMessage(outMessage, AllPlayer);
-        break;
-      }
-    case ChatSent:{
-        const outMessage = session.newTextGameMessage(ChatSent,session.getServerId().gameMessage.payload);
-        session.sendGroupMessage(outMessage,AllPlayer);
-        break;
-        }
-    case MoveFront:{
-        const outMessage = session.newTextGameMessage(MoveFront,session.getServerId().gameMessage.payload);
-        session.sendGroupMessage(outMessage,AllPlayer);
-        break;
-        }
-    case Moveback:{
-        const outMessage = session.newTextGameMessage(Moveback,session.getServerId().gameMessage.payload);
-        session.sendGroupMessage(outMessage,AllPlayer);
-        break;
-        }
-    case Moveleft:{
-        const outMessage = session.newTextGameMessage(Moveleft,session.getServerId().gameMessage.payload);
-        session.sendGroupMessage(outMessage,AllPlayer);
-        break;
-    }
-    case Moveright:{
-        const outMessage = session.newTextGameMessage(Moveright,session.getServerId().gameMessage.payload);
-        session.sendGroupMessage(outMessage,AllPlayer);
-        break;
-    }
-    case Change_Floor1:{
-        const outMessage = session.newTextGameMessage(Change_Floor1,session.getServerId().gameMessage.payload);
-        session.sendGroupMessage(outMessage,AllPlayer);
-        break;
-    }
-    case Change_Floor2:{
-        const outMessage = session.newTextGameMessage(Change_Floor2,session.getServerId().gameMessage.payload);
-        session.sendGroupMessage(outMessage,AllPlayer);
-        break;
-    }
-    case Change_Floor3:{
-        const outMessage = session.newTextGameMessage(Change_Floor2,session.getServerId().gameMessage.payload);
-        session.sendGroupMessage(outMessage,AllPlayer);
-        break;
-    }
-    case Change_Wall1:{
-        const outMessage = session.newTextGameMessage(Change_Wall1,session.getServerId().gameMessage.payload);
-        session.sendGroupMessage(outMessage,AllPlayer);
-        break;
-    }
-    case Change_Wall2:{
-        const outMessage = session.newTextGameMessage(Change_Wall2,session.getServerId().gameMessage.payload);
-        session.sendGroupMessage(outMessage,AllPlayer);
-        break;
-    }
-    case Change_Wall3:{
-        const outMessage = session.newTextGameMessage(Change_Wall3,session.getServerId().gameMessage.payload);
-        session.sendGroupMessage(outMessage,AllPlayer);
-        break;    
-    }
-    default:
-        break;
-    }
+    const outMessage = session.newTextGameMessage(gameMessage.opCode, gameMessage.sender, gameMessage.payload);
+    session.sendGroupMessage(outMessage, -1);
+    // session.sendReliableMessage(gameMessage.opCode, a);
+    //     switch (gameMessage.opCode) {
+    //         case OP_CODE_CUSTOM_OP1:
+    //             {
+    //                 // do operation 1 with gameMessage.payload for example sendToGroup
+    //                 const outMessage = session.newTextGameMessage(OP_CODE_CUSTOM_OP1_REPLY, gameMessage.sender, gameMessage.payload);
+    //                 session.sendGroupMessage(outMessage, AllPlayer);
+    //                 break;
+    //             }
+    //         case ChatSent:
+    //             {
+    //                 const outMessage = session.newTextGameMessage(ChatSent, gameMessage.sender, gameMessage.payload);
+    //                 // session.sendGroupMessage(outMessage,AllPlayer);
+    //                 session.sendReliableMessage(ChatSent, a);
+    //                 break;
+    //             }
+    //         case MoveFront:
+    //             {
+    //                 const outMessage = session.newTextGameMessage(MoveFront, session.getServerId(), gameMessage.payload);
+    //                 session.sendGroupMessage(outMessage, AllPlayer);
+    //                 session.sendReliableMessage(MoveFront, a);
+    //                 break;
+    //             }
+    //         case Moveback:
+    //             {
+    //                 const outMessage = session.newTextGameMessage(Moveback, session.getServerId().gameMessage.payload);
+    //                 session.sendGroupMessage(outMessage, AllPlayer);
+    //                 break;
+    //             }
+    //         case Moveleft:
+    //             {
+    //                 const outMessage = session.newTextGameMessage(Moveleft, session.getServerId().gameMessage.payload);
+    //                 session.sendGroupMessage(outMessage, AllPlayer);
+    //                 break;
+    //             }
+    //         case Moveright:
+    //             {
+    //                 const outMessage = session.newTextGameMessage(Moveright, session.getServerId().gameMessage.payload);
+    //                 session.sendGroupMessage(outMessage, AllPlayer);
+    //                 break;
+    //             }
+    //         case Change_Floor1:
+    //             {
+    //                 const outMessage = session.newTextGameMessage(Change_Floor1, session.getServerId().gameMessage.payload);
+    //                 session.sendGroupMessage(outMessage, AllPlayer);
+    //                 break;
+    //             }
+    //         case Change_Floor2:
+    //             {
+    //                 const outMessage = session.newTextGameMessage(Change_Floor2, session.getServerId().gameMessage.payload);
+    //                 session.sendGroupMessage(outMessage, AllPlayer);
+    //                 break;
+    //             }
+    //         case Change_Floor3:
+    //             {
+    //                 const outMessage = session.newTextGameMessage(Change_Floor2, session.getServerId().gameMessage.payload);
+    //                 session.sendGroupMessage(outMessage, AllPlayer);
+    //                 break;
+    //             }
+    //         case Change_Wall1:
+    //             {
+    //                 const outMessage = session.newTextGameMessage(Change_Wall1, session.getServerId().gameMessage.payload);
+    //                 session.sendGroupMessage(outMessage, AllPlayer);
+    //                 break;
+    //             }
+    //         case Change_Wall2:
+    //             {
+    //                 const outMessage = session.newTextGameMessage(Change_Wall2, session.getServerId().gameMessage.payload);
+    //                 session.sendGroupMessage(outMessage, AllPlayer);
+    //                 break;
+    //             }
+    //         case Change_Wall3:
+    //             {
+    //                 const outMessage = session.newTextGameMessage(Change_Wall3, session.getServerId().gameMessage.payload);
+    //                 session.sendGroupMessage(outMessage, AllPlayer);
+    //                 break;
+    //             }
+    //         default:
+    //             break;
+    //     }
+    // }
 }
 
 // Return true if the send should be allowed
@@ -218,20 +241,19 @@ async function tickLoop() {
 
     // In Tick loop - see if all players have left early after a minimum period of time has passed
     // Call processEnding() to terminate the process and quit
-    if ( (activePlayers == 0) && (elapsedTime > minimumElapsedTime)) {
+    if ((activePlayers == 0) && (elapsedTime > minimumElapsedTime)) {
         logger.info("All players disconnected. Ending game");
         const outcome = await session.processEnding();
         logger.info("Completed process ending with: " + outcome);
         process.exit(0);
-    }
-    else {
+    } else {
         setTimeout(tickLoop, tickTime);
     }
 }
 
 // Calculates the current time in seconds
 function getTimeInS() {
-    return Math.round(new Date().getTime()/1000);
+    return Math.round(new Date().getTime() / 1000);
 }
 
 exports.ssExports = {

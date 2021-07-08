@@ -135,7 +135,8 @@ public class SearchUIController : MonoBehaviour
     public void OnDataReceivedCallback(object sender, Aws.GameLift.Realtime.Event.DataReceivedEventArgs e)
     {
     
-           UnityEngine.Debug.Log("{e.OpCode}");
+           UnityEngine.Debug.Log($"{e.OpCode}");
+        PlayerPrefs.SetInt("PlayerSenderId", e.Sender);
     }
 
     int SearchAvailableUdpPort(int from = 1024, int to = ushort.MaxValue)
