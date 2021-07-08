@@ -1,45 +1,28 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/PlayerMoveMes.cs">
+﻿<Properties StartupConfiguration="{545C0A3C-7EDF-29E0-D43B-59D927CB6951}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyAssets/Scripts/GameLiftConfig.cs">
     <Files>
       <File FileName="Assets/MyAssets/Scripts/PlayUIController.cs" Line="176" Column="64" />
-      <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" Line="63" Column="63" />
-      <File FileName="Assets/MyAssets/Scripts/charController.cs" Line="74" Column="99" />
-      <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" Line="34" Column="42" />
-      <File FileName="Assets/MyAssets/Scripts/PlayMenuController.cs" Line="1" Column="1" />
+      <File FileName="Assets/MyAssets/Scripts/MainMenuUIController.cs" />
+      <File FileName="Assets/MyAssets/Scripts/charController.cs" />
+      <File FileName="Assets/MyAssets/Scripts/SettingUIController.cs" />
+      <File FileName="Assets/MyAssets/Scripts/PlayMenuController.cs" />
       <File FileName="Assets/MyAssets/Scripts/TitleUIController.cs" />
       <File FileName="Assets/MyAssets/Scripts/AWSCognitoIDs.cs" />
       <File FileName="Assets/MyAssets/Scripts/DynamoTest.cs" />
       <File FileName="Assets/MyAssets/Scripts/AmazonDynamoDBAttributes.cs" />
-      <File FileName="Assets/MyAssets/Scripts/RealTimeClient.cs" Line="31" Column="44" />
-      <File FileName="Assets/MyAssets/Scripts/PlayerMoveMes.cs" Line="19" Column="48" />
-      <File FileName="Assets/MyAssets/Scripts/CreateUIController.cs" Line="15" Column="19" />
-      <File FileName="Assets/MyAssets/Scripts/GameLiftConfig.cs" Line="11" Column="87" />
-      <File FileName="Assets/MyAssets/Scripts/SearchUIController.cs" Line="124" Column="79" />
-      <File FileName="Assets/MyAssets/Scripts/Configobjcontroller.cs" Line="20" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/new_user_credentials (1).csv" Line="1" Column="1" />
-      <File FileName="Assets/MyAssets/Scripts/Unity_Server.js" Line="132" Column="46" />
+      <File FileName="Assets/MyAssets/Scripts/RealTimeClient.cs" />
+      <File FileName="Assets/MyAssets/Scripts/PlayerMoveMes.cs" />
+      <File FileName="Assets/MyAssets/Scripts/CreateUIController.cs" />
+      <File FileName="Assets/MyAssets/Scripts/GameLiftConfig.cs" />
+      <File FileName="Assets/MyAssets/Scripts/SearchUIController.cs" />
+      <File FileName="Assets/MyAssets/Scripts/Configobjcontroller.cs" />
+      <File FileName="Assets/MyAssets/Scripts/new_user_credentials (1).csv" />
+      <File FileName="Assets/MyAssets/Scripts/Unity_Server.js" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="AWS_Project" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="Assets" expanded="True">
-                <Node name="MyAssets" expanded="True">
-                  <Node name="Scripts" expanded="True">
-                    <Node name="CameraController.cs" selected="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="00b60379-190d-4e4e-8aa4-3cf6cf7ed63c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="aefd2b1b-021e-4635-9a08-e465a48696a9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

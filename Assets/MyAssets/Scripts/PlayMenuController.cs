@@ -22,7 +22,9 @@ public class PlayMenuController : MonoBehaviour
         icons_parent = GameObject.Find("icons");
         icons = new GameObject[icons_parent.transform.childCount];
 
-        for(int i = 0; i < icons.Length; i++)
+        realTimeClient = GameObject.Find("RealTimeClient").GetComponent<Configobjcontroller>().realTimeClient;
+
+        for (int i = 0; i < icons.Length; i++)
         {
             icons[i] = icons_parent.transform.GetChild(i).gameObject;
             string ObjectName = icons[i].name;

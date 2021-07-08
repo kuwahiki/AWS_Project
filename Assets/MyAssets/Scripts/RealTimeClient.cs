@@ -4,6 +4,7 @@ using UnityEngine;
 using Aws.GameLift.Realtime;
 using Aws.GameLift.Realtime.Event;
 using Aws.GameLift.Realtime.Types;
+using Aws.GameLift.Realtime.Command;
 public class RealTimeClient
 {
     public Aws.GameLift.Realtime.Client Client { get; private set; }
@@ -139,10 +140,12 @@ public class RealTimeClient
         if (Mes != 0) {
             //UnityEngine.Debug.Log("SendMessage");
             try {
-                Client.SendMessage(Client.NewMessage(Mes)
-                    .WithDeliveryIntent(intent)
-                    .WithTargetPlayer(Constants.PLAYER_ID_SERVER)
-                    .WithPayload(StringToBytes(payload)));
+                RTMessage message = Client.NewMessage(Mes);
+                Client.SendMessage(message);
+                //Client.SendMessage(Client.NewMessage(Mes)
+                //    .WithDeliveryIntent(intent)
+                //    .WithTargetPlayer(Constants.PLAYER_ID_SERVER)
+                //    .WithPayload(StringToBytes(payload)));
             }catch(Exception ex)
             {
                 Debug.LogError(ex);

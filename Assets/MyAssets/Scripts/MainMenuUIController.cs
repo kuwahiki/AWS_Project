@@ -10,6 +10,8 @@ using UnityEngine.EventSystems;
 using Amazon;
 using Amazon.GameLift;
 using Amazon.GameLift.Model;
+using Aws.GameLift.Realtime.Types;
+using Aws.GameLift.Realtime;
 using DG.Tweening;
 
 public class MainMenuUIController : MonoBehaviour
@@ -17,6 +19,7 @@ public class MainMenuUIController : MonoBehaviour
     GameObject[] menu_elem;
     GameObject Canvas;
     AmazonGameLiftClient gameLiftClient;
+    RealTimeClient realTimeClient;
     // Start is called before the first frame update
     void Start()
     {

@@ -12,6 +12,8 @@ using Amazon.DynamoDBv2.Internal;
 using Amazon.DynamoDBv2.Model;
 using Amazon.DynamoDBv2.DataModel;
 using Amazon.CognitoIdentity;
+using Aws.GameLift.Realtime.Types;
+using Aws.GameLift.Realtime;
 using System.Threading.Tasks;
 using System.Threading;
 
@@ -21,6 +23,7 @@ public class PlayUIController : MonoBehaviour
     private Button Send;
     AmazonDynamoDBClient Client;
     CognitoAWSCredentials Credentials;
+    RealTimeClient realTimeClient;
     int Bookid = 1001,count = 0;
     DynamoDBContext Context;
     float getchat = 0;
